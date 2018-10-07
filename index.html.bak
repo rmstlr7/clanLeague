@@ -160,8 +160,8 @@
           </li>
           <li class="nav-item dropdown d-none d-xl-inline-block">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <span class="profile-text">Hello, Richard V.Welsh !</span>
-              <img class="img-xs rounded-circle" src="images/faces/face1.jpg" alt="Profile image">
+              <span class="profile-text">개코</span>
+              <img class="img-xs rounded-circle" src="images/faces/face1.png" alt="Profile image">
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
               <a class="dropdown-item p-0">
@@ -206,10 +206,10 @@
             <div class="nav-link">
               <div class="user-wrapper">
                 <div class="profile-image">
-                  <img src="images/faces/face1.jpg" alt="profile image">
+                  <img src="images/faces/face1.png" alt="profile image">
                 </div>
                 <div class="text-wrapper">
-                  <p class="profile-name">Richard V.Welsh</p>
+                  <p class="profile-name">SWC_개코</p>
                   <div>
                     <small class="designation text-muted">Manager</small>
                     <span class="status-indicator online"></span>
@@ -737,7 +737,7 @@
                   <div class="fluid-container">
                     <div class="row ticket-card mt-3 pb-2 border-bottom pb-3 mb-3">
                       <div class="col-md-1">
-                        <img class="img-sm rounded-circle mb-4 mb-md-0" src="images/faces/face1.jpg" alt="profile image">
+                        <img class="img-sm rounded-circle mb-4 mb-md-0" src="images/faces/face1.png" alt="profile image">
                       </div>
                       <div class="ticket-details col-md-9">
                         <div class="d-flex">
