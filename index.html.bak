@@ -606,20 +606,30 @@
                           <td>
                             <div class="progress">
                               <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                                aria-valuemax="100">경기1</div>
                             </div>
                           </td>
                           <td>
-                            $ 77.99
+                            승점1
                           </td>
-                          <td class="text-danger"> 53.64%
+                          <td class="text-danger"> 
+							승1
                             <i class="mdi mdi-arrow-down"></i>
                           </td>
                           <td>
-                            May 15, 2015
+                            무1
                           </td>
 						  <td>
-                            May 15, 2015
+                            패1
+                          </td>
+						  <td>
+                            득1
+                          </td>
+						  <td>
+                            실1
+                          </td>
+						  <td>
+                            차1
                           </td>
                         </tr>
                         <tr>
