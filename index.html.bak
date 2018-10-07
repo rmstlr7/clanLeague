@@ -395,7 +395,8 @@
                             1
                           </td>
                           <td class="py-1">
-                             <img class="img-xs rounded-circle" src="images/faces/face1.png" alt="Profile image"> SWC
+                             <img class="" src="images/faces/face1.png" alt="Profile image">
+							 <h3 class="font-weight-medium text-right mb-0">SWC</h3>
                           </td>
                           <td>
                             <div class="progress">
@@ -434,8 +435,8 @@
                           <td class="font-weight-medium">
                             2
                           </td>
-                          <td>
-                             <img class="img-xs rounded-circle" src="images/faces/face1.png" alt="Profile image"> 오타쿠
+                          <td class="py-1">
+                             <img class="img-xs rounded-circle" src="images/faces/face1.png" alt="Profile image"> SWC
                           </td>
                           <td>
                             <div class="progress">
