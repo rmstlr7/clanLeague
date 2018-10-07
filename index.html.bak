@@ -274,9 +274,9 @@
                       <i class="mdi mdi-cube text-danger icon-lg"></i>
                     </div>
                     <div class="float-right">
-                      <p class="mb-0 text-right">Total Revenue</p>
+                      <p class="mb-0 text-right">1ST 최우수 Player</p>
                       <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">$65,650</h3>
+                        <h3 class="font-weight-medium text-right mb-0">마동석</h3>
                       </div>
                     </div>
                   </div>
@@ -397,7 +397,7 @@
                           </td>
                           <td class="py-1">
                              <img class="img-xs rounded-circle" src="images/faces/face1.png" alt="Profile image">
-							 <h3>SWC</h3>
+							 <h4>SWC</h4>
                           </td>
                           <td>
                             <div class="progress">
