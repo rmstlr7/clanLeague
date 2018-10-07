@@ -209,7 +209,7 @@
                   <img src="images/faces/face1.png" alt="profile image">
                 </div>
                 <div class="text-wrapper">
-                  <p class="profile-name">SWC_개코</p>
+                  <p class="profile-name">SWC_GAEKO[개코]</p>
                   <div>
                     <small class="designation text-muted">Manager</small>
                     <span class="status-indicator online"></span>
@@ -564,7 +564,7 @@
                       <thead>
                         <tr>
                           <th>
-                            #
+                            순위
                           </th>
                           <th>
                             CLAN
@@ -581,6 +581,18 @@
                           <th>
                             무
                           </th>
+						  <th>
+                            패
+                          </th>
+						  <th>
+                            득
+                          </th>
+						   <th>
+                            실
+                          </th>
+						   <th>
+                            차
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -589,7 +601,7 @@
                             1
                           </td>
                           <td>
-                            Herman Beck
+                            대전위닝
                           </td>
                           <td>
                             <div class="progress">
@@ -604,6 +616,9 @@
                             <i class="mdi mdi-arrow-down"></i>
                           </td>
                           <td>
+                            May 15, 2015
+                          </td>
+						  <td>
                             May 15, 2015
                           </td>
                         </tr>
