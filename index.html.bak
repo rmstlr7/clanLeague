@@ -432,7 +432,8 @@
                             2
                           </td>
                           <td class="py-1">
-                             <img class="img-xs rounded-circle" src="images/faces/face1.png" alt="Profile image"> 오타쿠
+                             <img class="img-xs rounded-circle" src="images/faces/face1.png" alt="Profile image">
+							 <h4>오타쿠</h4>
                           </td>
                           <td>
                             <div class="progress">
@@ -471,7 +472,8 @@
                             1
                           </td>
                           <td>
-                             <img class="img-xs rounded-circle" src="images/faces/face1.png" alt="Profile image"> 대전위닝
+                             <img class="img-xs rounded-circle" src="images/faces/face1.png" alt="Profile image">
+							 <h4>대전위닝</h4>
                           </td>
                           <td>
                             <div class="progress">
