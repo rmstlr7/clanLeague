@@ -420,7 +420,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li class="active">Dashboard</li>
+        <li class="active"><i class="fa fa-dashboard"></i> fa fa-laptop</li>
       </ol>
     </section>
 
