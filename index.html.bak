@@ -69,7 +69,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user2-160x160.gif" class="img-circle" alt="User Image">
+                        <img src="dist/img/user2-160x160.svg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -255,13 +255,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user2-160x160.gif" class="user-image" alt="User Image">
+              <img src="dist/img/user2-160x160.svg" class="user-image" alt="User Image">
               <span class="hidden-xs">SWC_GaeKO</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.gif" class="img-circle" alt="User Image">
+                <img src="dist/img/user2-160x160.svg" class="img-circle" alt="User Image">
 
                 <p>
                   SWC_GaeKo - Web Developer
@@ -310,7 +310,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user2-160x160.gif" class="img-circle" alt="User Image">
+          <img src="dist/img/user2-160x160.svg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>SWC_GaeKO</p>
@@ -489,10 +489,10 @@
               <!-- USERS LIST -->
               <div class="box box-danger">
                 <div class="box-header with-border">
-                  <h3 class="box-title">ClanLeague Clubs</h3>
+                  <h3 class="box-title">ClanLeague Clubs</h3> &nbsp; <small>참여클랜</small>
 
                   <div class="box-tools pull-right">
-                    <span class="label label-danger">8 New Members</span>
+                    <span class="label label-danger">0 New Clubs</span>
                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                     </button>
                     <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
@@ -503,45 +503,62 @@
                 <div class="box-body no-padding">
                   <ul class="users-list clearfix">
                     <li>
-                      <img src="dist/img/user1-128x128.gif" alt="User Image">
-                      <a class="users-list-name" href="#">SWC</a>
-                      <span class="users-list-date">Today</span>
+                      <img src="dist/img/swc.gif" alt="User Image">
+                      <a class="users-list-name" href="#">S.W.C</a>
+                      <span class="users-list-date">Swc</span>
                     </li>
                     <li>
-                      <img src="dist/img/user8-128x128.gif" alt="User Image">
-                      <a class="users-list-name" href="#">Norman</a>
-                      <span class="users-list-date">Yesterday</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user7-128x128.gif" alt="User Image">
-                      <a class="users-list-name" href="#">Jane</a>
-                      <span class="users-list-date">12 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user6-128x128.gif" alt="User Image">
-                      <a class="users-list-name" href="#">John</a>
-                      <span class="users-list-date">12 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user2.gif" alt="User Image">
-                      <a class="users-list-name" href="#">Alexander</a>
-                      <span class="users-list-date">13 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user5-128x128.gif" alt="User Image">
-                      <a class="users-list-name" href="#">Sarah</a>
-                      <span class="users-list-date">14 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user4-128x128.gif" alt="User Image">
-                      <a class="users-list-name" href="#">Nora</a>
-                      <span class="users-list-date">15 Jan</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/user3-128x128.gif" alt="User Image">
+                      <img src="dist/img/daejeon.gif" alt="User Image">
                       <a class="users-list-name" href="#">대전위닝</a>
-                      <span class="users-list-date">15 Jan</span>
+                      <span class="users-list-date">DaeJeonWinning</span>
                     </li>
+                    <li>
+                      <img src="dist/img/burinng.gif" alt="User Image">
+                      <a class="users-list-name" href="#">버닝</a>
+                      <span class="users-list-date">Burinng</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/dragonBall.gif" alt="User Image">
+                      <a class="users-list-name" href="#">드래곤볼</a>
+                      <span class="users-list-date">DragonBall</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/otaku.gif" alt="User Image">
+                      <a class="users-list-name" href="#">오타쿠</a>
+                      <span class="users-list-date">Otaku</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/not.gif" alt="User Image">
+                      <a class="users-list-name" href="#">나트</a>
+                      <span class="users-list-date">Not</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/friends.gif" alt="User Image">
+                      <a class="users-list-name" href="#">위닝친구</a>
+                      <span class="users-list-date">Friends</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/lowe.gif" alt="User Image">
+                      <a class="users-list-name" href="#">로위</a>
+                      <span class="users-list-date">lowe</span>
+                    </li>
+
+					<li>
+                      <img src="dist/img/old.gif" alt="User Image">
+                      <a class="users-list-name" href="#">노땅파워</a>
+                      <span class="users-list-date">OldPower</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/teamA.gif" alt="User Image">
+                      <a class="users-list-name" href="#">D.D</a>
+                      <span class="users-list-date">DD</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/teamB.gif" alt="User Image">
+                      <a class="users-list-name" href="#">킬러</a>
+                      <span class="users-list-date">Killer</span>
+                    </li>
+
                   </ul>
                   <!-- /.users-list -->
                 </div>
