@@ -992,10 +992,10 @@
                     <img src="dist/img/default-50x50.gif" alt="Product Image">
                   </div>
                   <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Samsung TV
+                    <a href="javascript:void(0)" class="product-title">사슴과사자
                       <span class="label label-warning pull-right">$1800</span></a>
                     <span class="product-description">
-                          Samsung Smart HDTV.
+                         PES2019 대전위닝 디거님의 고급슛강좌
                         </span>
                   </div>
                 </li>
@@ -1008,7 +1008,7 @@
                     <a href="javascript:void(0)" class="product-title">PES_ZINO
                       <span class="label label-info pull-right">$700</span></a>
                     <span class="product-description">
-                          PES2019 기초에서 고급까지
+                          PES2019 기초에서 랭커까지
                         </span>
                   </div>
                 </li>
@@ -1033,7 +1033,7 @@
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">마동석tv
                       <span class="label label-success pull-right">$399</span></a>
-                    <span class="product-description">
+						<span class="product-description">
                           리그방송
                         </span>
                   </div>
