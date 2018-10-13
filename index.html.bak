@@ -44,7 +44,7 @@
     border-radius: 50%;
 }
 .photo2 {
-    width: 18px; height: 18px;
+    width: 20px; height: 20px;
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
@@ -862,6 +862,7 @@
                 <tr>
                   <td>1</td>
                   <td>
+					<img src="dist/img/swc.gif" class="photo2" alt="Product Image">
 					SWC
 				  </td>
                   <td>2</td>
@@ -876,6 +877,7 @@
 				<tr>
                   <td>2</td>
                   <td>
+					<img src="dist/img/dragonBall.gif" class="photo2" alt="Product Image">
 					드래곤볼
 				  </td>
                   <td>2</td>
@@ -890,6 +892,7 @@
 				<tr>
                   <td>3</td>
                   <td>
+					<img src="dist/img/friends.gif" class="photo2" alt="Product Image">
 					위친
 				  </td>
                   <td>3</td>
@@ -904,6 +907,7 @@
 				<tr>
                   <td>4</td>
                   <td>
+					<img src="dist/img/deajaeon.gif" class="photo2" alt="Product Image">
 					대전위닝
 				  </td>
                   <td>0</td>
@@ -918,6 +922,7 @@
 				<tr>
                   <td>5</td>
                   <td>
+					<img src="dist/img/lowe.gif" class="photo2" alt="Product Image">
 					로위
 				  </td>
                   <td>0</td>
