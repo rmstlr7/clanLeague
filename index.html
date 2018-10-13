@@ -32,12 +32,35 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+
   <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
 </head>
-
+<style>
+.photo1 {
+    width: 100px; height: 100px;
+    border-radius: 50%;
+}
+.photo2 {
+    width: 20px; height: 20px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+.photo3 {
+    width: 100px; height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.photo4 {
+    width: 100px; height: 100px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 50%;
+}
+</style>
 
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -648,6 +671,7 @@
                 <tr>
                   <td>1</td>
                   <td>
+					<img src="dist/img/swc.gif" class="photo2" alt="Product Image">
 					SWC
 				  </td>
                   <td>4</td>
@@ -662,6 +686,7 @@
 				<tr>
                   <td>2</td>
                   <td>
+					<img src="dist/img/daejeon.gif" class="photo2" alt="Product Image">
 					대전위닝
 				  </td>
                   <td>5</td>
@@ -676,6 +701,7 @@
 				<tr>
                   <td>3</td>
                   <td>
+					<img src="dist/img/otaku.gif" class="photo2" alt="Product Image">
 					오타쿠 
 				  </td>
                   <td>2</td>
@@ -690,6 +716,7 @@
               	<tr>
                   <td>4</td>
                   <td>
+					<img src="dist/img/old.gif" class="photo2" alt="Product Image">
 					노땅파워 
 				  </td>
                   <td>2</td>
@@ -704,6 +731,7 @@
               	<tr>
                   <td>5</td>
                   <td>
+					<img src="dist/img/dragonBall.gif" class="photo2" alt="Product Image">
 					드래곤볼 
 				  </td>
                   <td>4</td>
@@ -718,6 +746,7 @@
 				<tr>
                   <td>6</td>
                   <td>
+					<img src="dist/img/burinng.gif" class="photo2" alt="Product Image">
 					버닝 
 				  </td>
                   <td>2</td>
@@ -732,6 +761,7 @@
               	<tr>
                   <td>7</td>
                   <td>
+					<img src="dist/img/friends.gif" class="photo2" alt="Product Image">
 					위친 
 				  </td>
                   <td>5</td>
@@ -746,6 +776,7 @@
        			<tr>
                   <td>8</td>
                   <td>
+					<img src="dist/img/lowe.gif" class="photo2" alt="Product Image">
 					로위 
 				  </td>
                   <td>2</td>
@@ -760,6 +791,7 @@
 				<tr>
                   <td>9</td>
                   <td>
+					<img src="dist/img/teamA.gif" class="photo2" alt="Product Image">
 					DD 
 				  </td>
                   <td>2</td>
@@ -774,6 +806,7 @@
 				<tr>
                   <td>10</td>
                   <td>
+					<img src="dist/img/not.gif" class="photo2" alt="Product Image">
 					나트 
 				  </td>
                   <td>0</td>
@@ -788,6 +821,7 @@
 				<tr>
                   <td>10</td>
                   <td>
+					<img src="dist/img/teamB.gif" class="photo2" alt="Product Image">
 					킬러 
 				  </td>
                   <td>0</td>
@@ -812,42 +846,89 @@
               <table id="example2" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
+                  <th>순위</th>
+                  <th>클랜</th>
+                  <th>경기수</th>
+                  <th>승점</th>
+                  <th>승</th>
+				  <th>무</th>
+				  <th>패</th>
+				  <th>득</th>
+				  <th>실</th>
+				  <th>득실차</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
-                  </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                </tr>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0
-                  </td>
-                  <td>Win 95+</td>
+                  <td>1</td>
+                  <td>
+					SWC
+				  </td>
+                  <td>2</td>
+                  <td>6</td>
+                  <td>2</td>
+				  <td>0</td>
+				  <td>0</td>
+				  <td>73</td>
+				  <td>51</td>
+				  <td>22</td>
+				</tr>
+				<tr>
+                  <td>2</td>
+                  <td>
+					드래곤볼
+				  </td>
+                  <td>2</td>
+                  <td>6</td>
+                  <td>2</td>
+				  <td>0</td>
+				  <td>0</td>
+				  <td>66</td>
+				  <td>59</td>
+				  <td>7</td>
+				</tr>
+				<tr>
+                  <td>3</td>
+                  <td>
+					위친
+				  </td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>1</td>
+				  <td>0</td>
+				  <td>2</td>
+				  <td>90</td>
+				  <td>110</td>
+				  <td>-20</td>
+				</tr>
+				<tr>
+                  <td>4</td>
+                  <td>
+					대전위닝
+				  </td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+				  <td>0</td>
+				  <td>3</td>
+				  <td>71</td>
+				  <td>80</td>
+				  <td>-9</td>
+				</tr>
+				<tr>
                   <td>5</td>
-                  <td>C</td>
-                </tr>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.5
-                  </td>
-                  <td>Win 95+</td>
-                  <td>5.5</td>
-                  <td>A</td>
-                </tr>
-
+                  <td>
+					로위
+				  </td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+				  <td>0</td>
+				  <td>0</td>
+				  <td>0</td>
+				  <td>0</td>
+				  <td>0</td>
+				</tr>
 
                 </tfoot>
               </table>
