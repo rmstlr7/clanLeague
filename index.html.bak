@@ -659,11 +659,11 @@
                   <th>클랜</th>
                   <th>경기수</th>
                   <th>승점</th>
-                  <th>승</th>
-				  <th>무</th>
-				  <th>패</th>
-				  <th>득</th>
-				  <th>실</th>
+                  <th>승리</th>
+				  <th>무승부</th>
+				  <th>패배</th>
+				  <th>득점</th>
+				  <th>실점</th>
 				  <th>득실차</th>
                 </tr>
                 </thead>
@@ -841,106 +841,108 @@
 	      		</div>
             <!-- table end 2 -->		
 				<div class="chart tab-pane" id="sales-chart" style="">
-<!-- /.box-header -->
-            <div class="box-body">
-              <table id="example2" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>순위</th>
-                  <th>클랜</th>
-                  <th>경기수</th>
-                  <th>승점</th>
-                  <th>승</th>
-				  <th>무</th>
-				  <th>패</th>
-				  <th>득</th>
-				  <th>실</th>
-				  <th>득실차</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-					<img src="dist/img/swc.gif" class="photo2" alt="Product Image">
-					SWC
-				  </td>
-                  <td>2</td>
-                  <td>6</td>
-                  <td>2</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>73</td>
-				  <td>51</td>
-				  <td>22</td>
-				</tr>
-				<tr>
-                  <td>2</td>
-                  <td>
-					<img src="dist/img/dragonBall.gif" class="photo2" alt="Product Image">
-					드래곤볼
-				  </td>
-                  <td>2</td>
-                  <td>6</td>
-                  <td>2</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>66</td>
-				  <td>59</td>
-				  <td>7</td>
-				</tr>
-				<tr>
-                  <td>3</td>
-                  <td>
-					<img src="dist/img/friends.gif" class="photo2" alt="Product Image">
-					위친
-				  </td>
-                  <td>3</td>
-                  <td>3</td>
-                  <td>1</td>
-				  <td>0</td>
-				  <td>2</td>
-				  <td>90</td>
-				  <td>110</td>
-				  <td>-20</td>
-				</tr>
-				<tr>
-                  <td>4</td>
-                  <td>
-					<img src="dist/img/daejeon.gif" class="photo2" alt="Product Image">
-					대전위닝
-				  </td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-				  <td>0</td>
-				  <td>3</td>
-				  <td>71</td>
-				  <td>80</td>
-				  <td>-9</td>
-				</tr>
-				<tr>
-                  <td>5</td>
-                  <td>
-					<img src="dist/img/lowe.gif" class="photo2" alt="Product Image">
-					로위
-				  </td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				</tr>
+			<!-- /.box-header -->
+					<div class="box-body">
+						<div class="table-responsive">
+						  <table id="example2" class="table table-bordered table-striped">
+							<thead>
+							<tr>
+							  <th>순위</th>
+							  <th>클랜</th>
+							  <th>경기수</th>
+							  <th>승점</th>
+							  <th>승리</th>
+							  <th>무승부</th>
+							  <th>패배</th>
+							  <th>득점</th>
+							  <th>실점</th>
+							  <th>득실차</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+							  <td>1</td>
+							  <td>
+								<img src="dist/img/swc.gif" class="photo2" alt="Product Image">
+								SWC
+							  </td>
+							  <td>2</td>
+							  <td>6</td>
+							  <td>2</td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>73</td>
+							  <td>51</td>
+							  <td>22</td>
+							</tr>
+							<tr>
+							  <td>2</td>
+							  <td>
+								<img src="dist/img/dragonBall.gif" class="photo2" alt="Product Image">
+								드래곤볼
+							  </td>
+							  <td>2</td>
+							  <td>6</td>
+							  <td>2</td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>66</td>
+							  <td>59</td>
+							  <td>7</td>
+							</tr>
+							<tr>
+							  <td>3</td>
+							  <td>
+								<img src="dist/img/friends.gif" class="photo2" alt="Product Image">
+								위친
+							  </td>
+							  <td>3</td>
+							  <td>3</td>
+							  <td>1</td>
+							  <td>0</td>
+							  <td>2</td>
+							  <td>90</td>
+							  <td>110</td>
+							  <td>-20</td>
+							</tr>
+							<tr>
+							  <td>4</td>
+							  <td>
+								<img src="dist/img/daejeon.gif" class="photo2" alt="Product Image">
+								대전위닝
+							  </td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>3</td>
+							  <td>71</td>
+							  <td>80</td>
+							  <td>-9</td>
+							</tr>
+							<tr>
+							  <td>5</td>
+							  <td>
+								<img src="dist/img/lowe.gif" class="photo2" alt="Product Image">
+								로위
+							  </td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>0</td>
+							  <td>0</td>
+							</tr>
 
-                </tfoot>
-              </table>
-            </div>
-            <!-- /.box-body -->
-				</div>
-            </div>
+							</tfoot>
+						  </table>
+						</div>
+					 <!-- /.box-body -->
+					</div>
+	</div>
+  </div>
  </div>
 
 			  <!-- TAB END-->
