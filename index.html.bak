@@ -955,11 +955,13 @@
 
 			  <!-- TAB END-->
 
+<!-- 3개 랭킹 -->
+
 <div class="col-md-4">
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">[PES 2019] TEAM RANKING<small> 팀 순위  </small></h3>
+              <h3 class="box-title">[PES 2019] Team Ranking <small> &nbsp; 팀 순위  </small></h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -976,7 +978,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">대전위닝
-                      <span class="label label-warning pull-right">$1800</span></a>
+                      <span class="label label-warning pull-right">P 1800</span></a>
                     <span class="product-description">
                           [1시즌 우승], [2시즌 준우승], [3시즌 3위]
                         </span>
@@ -988,8 +990,8 @@
                     <img src="dist/img/swc.gif" alt="Product Image">
                   </div>
                   <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Bicycle
-                      <span class="label label-info pull-right">$700</span></a>
+                    <a href="javascript:void(0)" class="product-title">SWC
+                      <span class="label label-info pull-right">P 700</span></a>
                     <span class="product-description">
                          [1시즌 준우승], [2시즌 준우승], [3시즌 3위]
                         </span>
@@ -1001,7 +1003,8 @@
                     <img src="dist/img/otaku.gif" alt="Product Image">
                   </div>
                   <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
+                    <a href="javascript:void(0)" class="product-title">로위 
+					<span class="label label-danger pull-right">P 350</span></a>
                     <span class="product-description">
                           [1시즌 4위], [2시즌 3위], [3시즌 준우승]
                         </span>
@@ -1013,8 +1016,8 @@
                     <img src="dist/img/lowe.gif" alt="Product Image">
                   </div>
                   <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">PlayStation 4
-                      <span class="label label-success pull-right">$399</span></a>
+                    <a href="javascript:void(0)" class="product-title">드래곤볼
+                      <span class="label label-success pull-right">P 399</span></a>
                     <span class="product-description">
                           [1시즌 3위], [2시즌 4위], [3시즌 5위]
                         </span>
@@ -1038,7 +1041,7 @@
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">[PES 2019] Solo Ranking <small> 최고의 플레이어 </small></h3>
+              <h3 class="box-title">[PES 2019] Solo Ranking  <small> &nbsp; 최고의 플레이어 </small></h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -1081,7 +1084,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">마동석
-					<span class="label label-danger pull-right">$350</span></a>
+					<span class="label label-danger pull-right">P 350</span></a>
                     <span class="product-description">
                           S.W.C
                         </span>
@@ -1094,7 +1097,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">부산남자
-                      <span class="label label-success pull-right">$399</span></a>
+                      <span class="label label-success pull-right">P 399</span></a>
                     <span class="product-description">
                           드래곤볼
                         </span>
@@ -1117,7 +1120,7 @@
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">[PES 2019] best class <small> 베스트 강의 </small></h3>
+              <h3 class="box-title">[PES 2019] Best Class <small> &nbsp;  베스트 강의 </small></h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -1134,7 +1137,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">사슴과사자
-                      <span class="label label-warning pull-right">$1800</span></a>
+                      <span class="label label-warning pull-right">P 1800</span></a>
                     <span class="product-description">
                          PES2019 대전위닝 디거님의 고급슛강좌
                         </span>
@@ -1147,7 +1150,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">PES_ZINO
-                      <span class="label label-info pull-right">$700</span></a>
+                      <span class="label label-info pull-right">P 700</span></a>
                     <span class="product-description">
                           PES2019 500점에서 1000점까지
                         </span>
@@ -1160,7 +1163,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">이누티비
-					<span class="label label-danger pull-right">$350</span></a>
+					<span class="label label-danger pull-right">P 350</span></a>
                     <span class="product-description">
                           PES2019 국내최초 뽑기전문방송 
                         </span>
@@ -1173,7 +1176,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">마동석tv
-                      <span class="label label-success pull-right">$399</span></a>
+                      <span class="label label-success pull-right">P 399</span></a>
 						<span class="product-description">
                           리그방송
                         </span>
@@ -1192,6 +1195,8 @@
 
  </div>
 
+<!-- 3개 랭킹 끝 -->
+
                   <!-- /.users-list -->
                 </div>
                 <!-- /.box-body -->
@@ -1206,16 +1211,6 @@
 
 
 <!--- --->
-<div class="row">
-        <div class="col-md-12">
-
-              <!-- USERS LIST -->
-              <div class="box">
-
-              </div>
-              <!--/.box -->
-        </div> 
-      </div>
 
 
 <!-- ---->		  
