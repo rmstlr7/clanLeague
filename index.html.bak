@@ -455,11 +455,10 @@
 
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
+
+
 	<div style="padding: 20px 30px; background: rgb(243, 156, 18); z-index: 999999; font-size: 16px; font-weight: 600;">
-	안녕하세요 SWC클랜소속'개코'라고합니다.</br>
-	[PES 2019] 클랜리그 페이지를 만들었습니다.</br>
-	부족하지만 많은 이용바랍니다.</br>
-	마지막으로 자료수집에 도움주신 대전위닝의 디거형님께 감사의 말씀을 전합니다.</br>
+
 	</div>
     <section class="content-header">
       <h1>
@@ -474,6 +473,24 @@
 
     <!-- Main content -->
     <section class="content">
+
+
+	<div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-red"><i class="glyphicon glyphicon-pencil"></i></span>
+            <div class="info-box-content">
+              <span class="info-box-text">
+			  	안녕하세요 SWC클랜소속'개코'라고합니다. </br>
+				[PES 2019] 클랜리그 페이지를 만들었습니다. 부족하지만 많은 이용바랍니다.</br></br>
+				마지막으로 자료수집에 도움주신 "대전위닝"의 "디거형님"께 감사의 말씀을 전합니다.</br>
+			  </span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+</div>
       <!-- Info boxes -->
       <div class="row">
         <div class="col-md-3 col-sm-6 col-xs-12">
