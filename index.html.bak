@@ -4,18 +4,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
   	<meta property="og:url" content="http://pescl.cf/">
-	<meta property="og:site_name" content="클랜리그"> 
+  	<meta property="og:title" content="Clan League"> 
+	<meta property="og:description" content="[PES2019] clanLeague 현황사이트"/>
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="http://sleague.iptime.org:8000/swc/resources/common/images/field3.svg">
-	<meta property="og:title" content="Clan League"> 
-	<meta property="og:description" content="[PES2019] clanLeague 현황사이트"/>
 	<meta property="og:image:width" content="800px;" /> 
 	<meta property="og:image:height" content="400px;" />
 
+
   <title>Clan League</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -615,10 +617,6 @@
       </div>
       <!-- /.row -->
 
-      <!-- Main row -->
-      <div class="row">
-        <!-- Left col -->
-        <div class="col-md-12">
 
 
 
@@ -957,23 +955,6 @@
 
 			  <!-- TAB END-->
 
-
-                  <!-- /.users-list -->
-                </div>
-                <!-- /.box-body -->
-              </div>
-
-<!-- /.box -->
-
-
-
-</div>
-
-<!-- 순위 끝 -->
-
-<div class="row">
-
-
 <div class="col-md-4">
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
@@ -1051,6 +1032,8 @@
           <!-- /.box -->
 
  </div>
+
+
 <div class="col-md-4">
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
@@ -1129,6 +1112,7 @@
           <!-- /.box -->
 
  </div>
+
 <div class="col-md-4">
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
@@ -1208,14 +1192,33 @@
 
  </div>
 
+                  <!-- /.users-list -->
+                </div>
+                <!-- /.box-body -->
+              </div>
+
+<!-- /.box -->
 </div>
+</div>
+<!-- 순위 끝 -->
+
+
+
+
 <!--- --->
+<div class="row">
+        <div class="col-md-12">
+
+              <!-- USERS LIST -->
+              <div class="box">
+
+              </div>
+              <!--/.box -->
+        </div> 
+      </div>
 
 
-
-<!--- --->
-
-		  
+<!-- ---->		  
 		  
 		  
 		  
