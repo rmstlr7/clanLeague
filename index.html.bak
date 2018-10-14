@@ -11,7 +11,7 @@
   	<meta property="og:title" content="Clan League"> 
 	<meta property="og:description" content="[PES2019] clanLeague 현황사이트"/>
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="http://sleague.iptime.org:8000/swc/resources/common/images/field3.svg">
+	<meta property="og:image" content="https://github.com/rmstlr7/clanLeague/blob/master/dist/img/clanLogo.svg">
 	<meta property="og:image:width" content="800px;" /> 
 	<meta property="og:image:height" content="400px;" />
 
@@ -961,7 +961,7 @@
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">[PES 2019] Team Ranking <small> &nbsp; 팀 순위  </small></h3>
+              <h3 class="box-title">[PES 2019] Clan Ranking <small> &nbsp; 클랜 순위  </small></h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
