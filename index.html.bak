@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  	<meta property="og:url" content="http://sleague.iptime.org:8000/swc/">
+  	<meta property="og:url" content="http://pescl.cf/">
 	<meta property="og:title" content="s리그"> 
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="http://sleague.iptime.org:8000/swc/resources/common/images/field3.svg">
@@ -977,7 +977,7 @@
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">[PES 2019] TEAM RANKING</h3>
+              <h3 class="box-title">[PES 2019] 팀 순위 TEAM RANKING</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -1054,7 +1054,7 @@
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">[PES 2019] 최고의 플레이어</h3>
+              <h3 class="box-title">[PES 2019] 최고의 플레이어 Solo Ranking </h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -1132,7 +1132,7 @@
 <!-- PRODUCT LIST -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">[PES 2019] 베스트 강의</h3>
+              <h3 class="box-title">[PES 2019] 베스트 강의 best class</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
