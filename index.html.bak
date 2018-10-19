@@ -30,8 +30,8 @@
  <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
 
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.css" type="text/css">
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
+  <link rel="stylesheet" href="dist/css/ClanLeague.min.css">
   <link rel="icon" href="dist/img/favicon.ico" type="image/ico" />
 
 
