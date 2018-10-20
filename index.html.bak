@@ -36,7 +36,11 @@
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
-
+<!-- 10-20 추가 -->
+<link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -51,6 +55,8 @@
 
     <script>
     $( document ).ready(function() {
+
+		
 
 		Kakao.init('d49726de39720bebe7ac2857fa12ab25');
         console.log( "document loaded" );
@@ -104,9 +110,27 @@
 						}
 					  ]
 					});
-
-
 		 });
+
+		//Initialize Select2 Elements
+		$('.select2').select2()
+		 //Date range picker with time picker
+		$('#reservationtime').daterangepicker({
+			timePicker: true
+			, timePickerIncrement: 30
+			, format: 'YYYY/MM/DD h:mm A' 
+		})
+
+		//Date picker
+		$('#datepicker').datepicker({
+		  autoclose: true
+		 // , format: 'YYYY/MM/DD h:mm'
+		})
+
+		//Timepicker
+		$('.timepicker').timepicker({
+		  showInputs: false
+		})
 
     });
  
@@ -651,23 +675,171 @@
 			
 					<div class="table-responsive">
 							<!-- /.box-header -->
+<!-- 1번 tab --->
             <div class="box-body">
-11111
+                  <ul class="users-list clearfix">
+                    <li>
+                      <img src="dist/img/swc.gif" alt="User Image">
+                      <a class="users-list-name" href="#">S.W.C</a>
+                      <span class="users-list-date">Swc</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/daejeon.gif" alt="User Image">
+                      <a class="users-list-name" href="#">대전위닝</a>
+                      <span class="users-list-date">DaeJeon</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/burinng.gif" alt="User Image">
+                      <a class="users-list-name" href="#">버닝</a>
+                      <span class="users-list-date">Burinng</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/dragonBall.gif" alt="User Image">
+                      <a class="users-list-name" href="#">드래곤볼</a>
+                      <span class="users-list-date">DragonBall</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/otaku.gif" alt="User Image">
+                      <a class="users-list-name" href="#">오타쿠</a>
+                      <span class="users-list-date">Otaku</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/not.gif" alt="User Image">
+                      <a class="users-list-name" href="#">나트</a>
+                      <span class="users-list-date">Not</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/friends.gif" alt="User Image">
+                      <a class="users-list-name" href="#">위닝친구</a>
+                      <span class="users-list-date">Friends</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/lowe.gif" alt="User Image">
+                      <a class="users-list-name" href="#">로위</a>
+                      <span class="users-list-date">Lowe</span>
+                    </li>
+
+					<li>
+                      <img src="dist/img/old.gif" alt="User Image">
+                      <a class="users-list-name" href="#">노땅파워</a>
+                      <span class="users-list-date">OldPower</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/teamA.gif" alt="User Image">
+                      <a class="users-list-name" href="#">D.D</a>
+                      <span class="users-list-date">DD</span>
+                    </li>
+                    <li>
+                      <img src="dist/img/teamB.gif" alt="User Image">
+                      <a class="users-list-name" href="#">킬러</a>
+                      <span class="users-list-date">Killer</span>
+                    </li>				
+                  </ul>
             </div>
+<!-- 1번 탭 종료 -->
             <!-- /.box-body -->
 					</div> 
 	      		</div>
-            <!-- table end 2 -->		
+            <!-- table end 2 -->
+<!-- 2번 탭 시작 -->
 				<div class="chart tab-pane" id="sales-chart" style="">
 			<!-- /.box-header -->
 					<div class="box-body">
 						<div class="table-responsive">
-						234
+						<!-- 2번째 탭 내용 시작 -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>신청클랜(본인클랜)</label>
+                <select class="form-control select2" style="width: 100%;">
+				  <option value="" disabled selected>본인클랜을 선택해주세요.</option>
+                  <option>SWC</option>
+				  <option>DD</option>
+                  <option>나트</option>
+				  <option>노땅파워</option>
+				  <option>대전위닝</option>
+                  <option>드래곤볼</option>
+                  <option>버닝</option>
+                  <option>오타쿠</option>
+                  <option>위닝친구</option>
+                  <option>킬러</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <label>상대클랜(상대클랜)</label>
+                <select class="form-control select2" style="width: 100%;">
+                  <option value="" disabled selected>상대클랜을 선택해주세요.</option>
+                  <option>SWC</option>
+				  <option>DD</option>
+                  <option>나트</option>
+				  <option disabled="disabled">노땅파워</option>
+				  <option>대전위닝</option>
+                  <option>드래곤볼</option>
+                  <option>버닝</option>
+                  <option>오타쿠</option>
+                  <option>위닝친구</option>
+                  <option>킬러</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>대전요청 날짜</label>
+
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="datepicker">
+                </div>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+              <!-- time Picker -->
+				  <div class="bootstrap-timepicker">
+					<div class="form-group">
+					  <label>대전요청 시간</label>
+
+					  <div class="input-group">
+						<div class="input-group-addon">
+						  <i class="fa fa-clock-o"></i>
+						</div>
+					    <input type="text" class="form-control timepicker">
+					  </div>
+					  <!-- /.input group -->
+					</div>
+					<!-- /.form group -->
+				  </div>
+              </div>
+              <!-- /.form-group -->
+
+			  <!-- /.form-group -->
+              <div class="form-group">
+              <!-- time Picker -->
+					<div class="form-group">
+					  <label>대전요청</label>
+
+                      <img id="kakao-link-btn" src="http://dn.api1.kage.kakao.co.kr/14/dn/btqa9B90G1b/GESkkYjKCwJdYOkLvIBKZ0/o.jpg" alt="User Image" style="width: 50px; height: 50px;" >
+					  <!-- /.input group -->
+					</div>
+					<!-- /.form group -->
+              </div>
+              <!-- /.form-group -->
+
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+						<!-- 2번째 탭 내용 종료 -->
 						</div>
 					 <!-- /.box-body -->
 					</div>
 </div>
-<!-- -->
+<!-- 2번 탭 종료  -->
                   <!-- /.users-list -->
                 </div>
                 <!-- /.box-body -->
@@ -1516,6 +1688,15 @@
 <script src="dist/js/pages/dashboard2.js"></script>
 <!--  for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+
+<!-- 10-20 추가 -->
+<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
 
 <!-- page script -->
 <script>
