@@ -69,7 +69,7 @@
 
 var datePick = $("#datepicker").val();
 var timePick = $(".timepicker").val();
-
+var homeTeam = 'dist/img/swc.gif';
 					var kakaoUrl = 'http://pescl.cf/';
 				 //   var pesdbUrl = 'http://pesdb.net/pes2019/?id='+playerVal;
 					
@@ -85,21 +85,21 @@ var timePick = $(".timepicker").val();
 					  },
 					  contents: [{
 						//title: '['+data.pickNum+'픽] '+data.pickTeamName+'\n[선수] '+playerId,
-						title: '타이틀',
-						description: '안녕',
+						title: '대전신청 클랜',
+						description: '대전',
 						//description: '#스카우터('+data.pickOwner+')',
-						imageUrl: 'http://www.pesmaster.com/pes-2019/graphics/players/player_0.png',
+						imageUrl: homeTeam,
 						//imageUrl: 'http://www.pesmaster.com/pes-2019/graphics/players/player_'+playerVal+'.png',
 						link: {
 							mobileWebUrl: kakaoUrl,
 							webUrl: kakaoUrl
 						}
 					  }, {
-						   title: '타이틀',
-						   description: '안녕',
+						   title: '상대 클랜',
+						   description: '상대',
 						  //title: '['+data.nextPickNum+'픽] '+data.nextTeamName+'\n'+"[시작] 드래프트 시작",
 						  //description: '#영입하세요.('+data.nextOwner+') ',
-						  imageUrl: 'http://www.pesmaster.com/pes-2019/graphics/players/player_0.png',  
+						  imageUrl: 'homeTeam',  
 						link: {
 							mobileWebUrl: kakaoUrl,
 							webUrl: kakaoUrl
