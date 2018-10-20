@@ -27,12 +27,14 @@
   <!-- DataTables -->
   <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css"> 
 
- <!-- AdminLTE Skins. Choose a skin from the css/skins
+ <!--  Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
 
   <link rel="stylesheet" href="dist/css/skins/all-skins.css">
   <link rel="stylesheet" href="dist/css/ClanLeague.min.css">
   <link rel="icon" href="dist/img/favicon.ico" type="image/ico" />
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -46,6 +48,75 @@
   <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <script>
+    $( document ).ready(function() {
+
+		Kakao.init('3549b0b7a12d3cf2f1b08d3f228f0a14');
+        console.log( "document loaded" );
+
+			$('#kakao-link-btn').click(function() {
+        console.log( "test" );
+
+
+					var kakaoUrl = 'http://pescl.cf/';
+				 //   var pesdbUrl = 'http://pesdb.net/pes2019/?id='+playerVal;
+					
+					// // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+					Kakao.Link.createDefaultButton({
+					  container: '#kakao-link-btn',
+					  objectType: 'list',
+					  //headerTitle: '[총 '+data.draftNum+'픽 - 팀 '+data.pickCycleNum+'번 선수]',
+					  headerTitle: '안녕하세요',
+					  headerLink: {
+						mobileWebUrl: kakaoUrl,
+						webUrl: kakaoUrl
+					  },
+					  contents: [{
+						//title: '['+data.pickNum+'픽] '+data.pickTeamName+'\n[선수] '+playerId,
+						title: '타이틀',
+						description: '안녕',
+						//description: '#스카우터('+data.pickOwner+')',
+						imageUrl: 'http://www.pesmaster.com/pes-2019/graphics/players/player_0.png',
+						//imageUrl: 'http://www.pesmaster.com/pes-2019/graphics/players/player_'+playerVal+'.png',
+						link: {
+							mobileWebUrl: kakaoUrl,
+							webUrl: kakaoUrl
+						}
+					  }, {
+						   title: '타이틀',
+						   description: '안녕',
+						  //title: '['+data.nextPickNum+'픽] '+data.nextTeamName+'\n'+"[시작] 드래프트 시작",
+						  //description: '#영입하세요.('+data.nextOwner+') ',
+						  imageUrl: 'http://www.pesmaster.com/pes-2019/graphics/players/player_0.png',  
+						link: {
+							mobileWebUrl: kakaoUrl,
+							webUrl: kakaoUrl
+						}
+					  }],
+					  buttons: [
+						{
+						  title: 'S 리그 접속하기',
+						  link: {
+							mobileWebUrl: kakaoUrl,
+							webUrl: kakaoUrl
+						  }
+						}
+					  ]
+					});
+
+
+		 });
+
+    });
+ 
+    $( window ).on( "load", function() {
+        console.log( "window loaded" );
+    });
+
+
+	
+    </script>
 
 </head>
 <style>
@@ -72,6 +143,9 @@
 }
 </style>
 
+
+
+        
 
 <body class="hold-transition skin-blue sidebar-mini">
 
@@ -454,10 +528,6 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
 
-
-	<div style="padding: 20px 30px; background: rgb(243, 156, 18); z-index: 999999; font-size: 16px; font-weight: 600;">
-
-	</div>
     <section class="content-header">
       <h1>
         클랜리그 현황
@@ -483,6 +553,13 @@
 				[PES 2019] 클랜리그 현황 페이지를 만들었습니다. 부족하지만 많은 이용바랍니다.</br></br>
 				마지막으로 자료수집에 도움주신 "대전위닝"의 "디거형님"께 감사의 말씀을 전합니다.</br>
 			  </span>
+
+			   		<ul class="nav navbar-right" id="">
+						<a id="kakao-link-btn" class="" style=" cursor: pointer;">
+						  <img src="http://dn.api1.kage.kakao.co.kr/14/dn/btqa9B90G1b/GESkkYjKCwJdYOkLvIBKZ0/o.jpg" alt="Logo" style="width: 50px; height: 50px; margin: -100px 0px 0px 0px">
+						</a>
+
+ 					</ul>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -1460,7 +1537,7 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
 <script src="bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
+<!--  App -->
 <script src="dist/js/adminlte.min.js"></script>
 <!-- Sparkline -->
 <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
@@ -1470,9 +1547,9 @@
 <!-- SlimScroll -->
 <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<!-- dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard2.js"></script>
-<!-- AdminLTE for demo purposes -->
+<!--  for demo purposes -->
 <script src="dist/js/demo.js"></script>
 
 <!-- page script -->
