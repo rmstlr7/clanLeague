@@ -78,7 +78,7 @@ var timePick = $(".timepicker").val();
 					  container: '#kakao-link-btn',
 					  objectType: 'list',
 					  //headerTitle: '[총 '+data.draftNum+'픽 - 팀 '+data.pickCycleNum+'번 선수]',
-					  headerTitle: '['+datePick +'|'+ datePick+']',
+					  headerTitle: $("#datepicker").val() + $(".timepicker").val(),
 					  headerLink: {
 						mobileWebUrl: kakaoUrl,
 						webUrl: kakaoUrl
@@ -756,7 +756,7 @@ var timePick = $(".timepicker").val();
             <div class="col-md-6">
               <div class="form-group">
                 <label>신청클랜(본인클랜)</label>
-                <select class="form-control select2" style="width: 100%;">
+                <select class="form-control select1" style="width: 100%;">
 				  <option value="" disabled selected>본인클랜을 선택해주세요.</option>
                   <option>SWC</option>
 				  <option>DD</option>

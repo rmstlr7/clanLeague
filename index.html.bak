@@ -756,7 +756,7 @@ var timePick = $(".timepicker").val();
             <div class="col-md-6">
               <div class="form-group">
                 <label>신청클랜(본인클랜)</label>
-                <select class="form-control select2" style="width: 100%;">
+                <select class="form-control select1" style="width: 100%;">
 				  <option value="" disabled selected>본인클랜을 선택해주세요.</option>
                   <option>SWC</option>
 				  <option>DD</option>
