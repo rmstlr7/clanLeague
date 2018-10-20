@@ -80,6 +80,7 @@ var awayTeamText = $('#awayTeam :selected').text();
 var awayTeamVal = $('#awayTeam :selected').val();
 
 var homeTeam = 'http://pescl.cf/dist/img/team/'+homeTeamVal+'.png';
+var awayTeam = 'http://pescl.cf/dist/img/team/'+awayTeamVal+'.png';
 var kakaoUrl = 'http://pescl.cf/';
 
 
@@ -90,7 +91,7 @@ var kakaoUrl = 'http://pescl.cf/';
 					  container: '#kakao-link-btn',
 					  objectType: 'list',
 					  //headerTitle: '[총 '+data.draftNum+'픽 - 팀 '+data.pickCycleNum+'번 선수]',
-					  headerTitle: $("#datepicker").val() + $(".timepicker").val(),
+					  headerTitle: $("#datepicker").val() +'|'+ $(".timepicker").val(),
 					  headerLink: {
 						mobileWebUrl: kakaoUrl,
 						webUrl: kakaoUrl
@@ -111,7 +112,7 @@ var kakaoUrl = 'http://pescl.cf/';
 						   description: awayTeamText,
 						  //title: '['+data.nextPickNum+'픽] '+data.nextTeamName+'\n'+"[시작] 드래프트 시작",
 						  //description: '#영입하세요.('+data.nextOwner+') ',
-						  imageUrl: 'http://pescl.cf/dist/img/team/swc.png',  
+						  imageUrl: awayTeam,  
 						link: {
 							mobileWebUrl: kakaoUrl,
 							webUrl: kakaoUrl
