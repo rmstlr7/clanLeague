@@ -91,7 +91,7 @@ var kakaoUrl = 'http://pescl.cf/';
 					  container: '#kakao-link-btn',
 					  objectType: 'list',
 					  //headerTitle: '[총 '+data.draftNum+'픽 - 팀 '+data.pickCycleNum+'번 선수]',
-					  headerTitle: $("#datepicker").val() +'|'+ $(".timepicker").val(),
+					  headerTitle: '['+ $("#datepicker").val() + ']' + '[' + $(".timepicker").val() + ']',
 					  headerLink: {
 						mobileWebUrl: kakaoUrl,
 						webUrl: kakaoUrl
@@ -601,9 +601,11 @@ var kakaoUrl = 'http://pescl.cf/';
             <span class="info-box-icon bg-orange"><i class="glyphicon glyphicon-pencil"></i></span>
             <div class="info-box-content">
               <span class="info-box-text" title="" >
-			  	안녕하세요 SWC클랜소속 '개코' 라고합니다. </br>
-				[PES 2019] 클랜리그 현황 페이지를 만들었습니다. 부족하지만 많은 이용바랍니다.</br></br>
-				마지막으로 자료수집에 도움주신 "대전위닝"의 "디거형님"께 감사의 말씀을 전합니다.</br>
+			  	
+				대전신청[카톡] 업데이트 되었습니다. </br>
+				카카오톡으로 메시지를 전송 할 수 있습니다. </br>
+				주요기능 본인클랜 선택, 대전클랜 선택, 날짜, 시간을 지정한 후  </br>
+				카카오톡 이미지버튼을 클릭 시 원하는채팅방으로 메시지를 보낼 수 있는 기능입니다. </br>
 			  </span>
             </div>
             <!-- /.info-box-content -->
