@@ -62,15 +62,28 @@
         console.log( "document loaded" );
 
 			$('#kakao-link-btn').click(function() {
+
+
         console.log( "dataPick : "
 		, $("#datepicker").val()
 		, "#timepicker : "
 		, $(".timepicker").val());
 
+
+
+
 var datePick = $("#datepicker").val();
 var timePick = $(".timepicker").val();
-var homeTeam = 'http://pescl.cf/dist/img/team/daejeon.png';
-					var kakaoUrl = 'http://pescl.cf/';
+var homeTeamText = $('#homeTeam :selected').text();
+var homeTeamVal = $('#homeTeam :selected').val();
+var awayTeamText = $('#awayTeam :selected').text();
+var awayTeamVal = $('#awayTeam :selected').val();
+
+var homeTeam = 'http://pescl.cf/dist/img/team/'+homeTeamVal+'.png';
+var awayTeam = 'http://pescl.cf/dist/img/team/'+awayTeamVal+'.png';
+var kakaoUrl = 'http://pescl.cf/';
+
+
 				 //   var pesdbUrl = 'http://pesdb.net/pes2019/?id='+playerVal;
 					
 					// // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
@@ -86,7 +99,7 @@ var homeTeam = 'http://pescl.cf/dist/img/team/daejeon.png';
 					  contents: [{
 						//title: '['+data.pickNum+'픽] '+data.pickTeamName+'\n[선수] '+playerId,
 						title: '대전신청 클랜',
-						description: '대전',
+						description: homeTeamText,
 						//description: '#스카우터('+data.pickOwner+')',
 						imageUrl: homeTeam,
 						//imageUrl: 'http://www.pesmaster.com/pes-2019/graphics/players/player_'+playerVal+'.png',
@@ -96,10 +109,10 @@ var homeTeam = 'http://pescl.cf/dist/img/team/daejeon.png';
 						}
 					  }, {
 						   title: '상대 클랜',
-						   description: '상대',
+						   description: awayTeamText,
 						  //title: '['+data.nextPickNum+'픽] '+data.nextTeamName+'\n'+"[시작] 드래프트 시작",
 						  //description: '#영입하세요.('+data.nextOwner+') ',
-						  imageUrl: 'http://pescl.cf/dist/img/team/swc.png',  
+						  imageUrl: awayTeam,  
 						link: {
 							mobileWebUrl: kakaoUrl,
 							webUrl: kakaoUrl
@@ -118,7 +131,17 @@ var homeTeam = 'http://pescl.cf/dist/img/team/daejeon.png';
 		 });
 
 		//Initialize Select2 Elements
-		$('.select2').select2()
+		$('#homeTeam').select2({
+			placeholder: "본인클랜을 선택해주세요."
+			,allowClear: true
+		})
+
+
+		$("#awayTeam").select2({
+			placeholder: "상대클랜을 선택해주세요."
+			,allowClear: true
+		});
+
 		 //Date range picker with time picker
 		$('#reservationtime').daterangepicker({
 			timePicker: true
@@ -756,35 +779,33 @@ var homeTeam = 'http://pescl.cf/dist/img/team/daejeon.png';
             <div class="col-md-6">
               <div class="form-group">
                 <label>신청클랜(본인클랜)</label>
-                <select class="form-control select1" style="width: 100%;">
-				  <option value="" disabled selected>본인클랜을 선택해주세요.</option>
-                  <option>SWC</option>
-				  <option>DD</option>
-                  <option>나트</option>
-				  <option>노땅파워</option>
-				  <option>대전위닝</option>
-                  <option>드래곤볼</option>
-                  <option>버닝</option>
-                  <option>오타쿠</option>
-                  <option>위닝친구</option>
-                  <option>킬러</option>
+                <select class="form-control select2" style="width: 100%;" id="homeTeam">
+                  <option value="swc">SWC</option>
+				  <option value="teamA">DD</option>
+                  <option value="not">나트</option>
+				  <option value="old">노땅파워</option>
+				  <option value="daejeon">대전위닝</option>
+                  <option value="dragonBall">드래곤볼</option>
+                  <option value="burinng">버닝</option>
+                  <option value="otaku">오타쿠</option>
+                  <option value="friends">위닝친구</option>
+                  <option value="teamB" >킬러</option>
                 </select>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
                 <label>상대클랜(상대클랜)</label>
-                <select class="form-control select2" style="width: 100%;">
-                  <option value="" disabled selected>상대클랜을 선택해주세요.</option>
-                  <option>SWC</option>
-				  <option>DD</option>
-                  <option>나트</option>
-				  <option disabled="disabled">노땅파워</option>
-				  <option>대전위닝</option>
-                  <option>드래곤볼</option>
-                  <option>버닝</option>
-                  <option>오타쿠</option>
-                  <option>위닝친구</option>
-                  <option>킬러</option>
+                <select class="form-control select2" style="width: 100%;" id="awayTeam">
+                  <option value="swc">SWC</option>
+				  <option value="teamA">DD</option>
+                  <option value="not">나트</option>
+				  <option value="old">노땅파워</option>
+				  <option value="daejeon">대전위닝</option>
+                  <option value="dragonBall">드래곤볼</option>
+                  <option value="burinng">버닝</option>
+                  <option value="otaku">오타쿠</option>
+                  <option value="friends">위닝친구</option>
+                  <option value="teamB" >킬러</option>
                 </select>
               </div>
               <!-- /.form-group -->
