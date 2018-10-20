@@ -637,72 +637,37 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body no-padding">
-                  <ul class="users-list clearfix">
-                    <li>
-                      <img src="dist/img/swc.gif" alt="User Image">
-                      <a class="users-list-name" href="#">S.W.C</a>
-                      <span class="users-list-date">Swc</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/daejeon.gif" alt="User Image">
-                      <a class="users-list-name" href="#">대전위닝</a>
-                      <span class="users-list-date">DaeJeon</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/burinng.gif" alt="User Image">
-                      <a class="users-list-name" href="#">버닝</a>
-                      <span class="users-list-date">Burinng</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/dragonBall.gif" alt="User Image">
-                      <a class="users-list-name" href="#">드래곤볼</a>
-                      <span class="users-list-date">DragonBall</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/otaku.gif" alt="User Image">
-                      <a class="users-list-name" href="#">오타쿠</a>
-                      <span class="users-list-date">Otaku</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/not.gif" alt="User Image">
-                      <a class="users-list-name" href="#">나트</a>
-                      <span class="users-list-date">Not</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/friends.gif" alt="User Image">
-                      <a class="users-list-name" href="#">위닝친구</a>
-                      <span class="users-list-date">Friends</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/lowe.gif" alt="User Image">
-                      <a class="users-list-name" href="#">로위</a>
-                      <span class="users-list-date">Lowe</span>
-                    </li>
-
-					<li>
-                      <img src="dist/img/old.gif" alt="User Image">
-                      <a class="users-list-name" href="#">노땅파워</a>
-                      <span class="users-list-date">OldPower</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/teamA.gif" alt="User Image">
-                      <a class="users-list-name" href="#">D.D</a>
-                      <span class="users-list-date">DD</span>
-                    </li>
-                    <li>
-                      <img src="dist/img/teamB.gif" alt="User Image">
-                      <a class="users-list-name" href="#">킬러</a>
-                      <span class="users-list-date">Killer</span>
-                    </li>
-
-                    <li>
-                      <img id="kakao-link-btn" src="http://dn.api1.kage.kakao.co.kr/14/dn/btqa9B90G1b/GESkkYjKCwJdYOkLvIBKZ0/o.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">대전신청</a>
-                      <span class="users-list-date">카카오 대전신청</span>
-                    </li>					
-
-
-                  </ul>
+<!-- -->
+<div class="nav-tabs-custom" style="">
+            <!-- Tabs within a box -->
+            <ul class="nav nav-tabs ui-sortable-handle">
+              <li class="active"><a href="#revenue-chart" data-toggle="tab" aria-expanded="false">참여클럽</a></li>
+              <li class=""><a href="#sales-chart" data-toggle="tab" aria-expanded="true">대전신청[카톡]</a></li>
+            </ul>
+            <div class="tab-content no-padding">
+              	<!-- Morris chart - Sales -->
+				<!-- table start 1-->
+              	<div class="chart tab-pane active" id="revenue-chart" style="">
+			
+					<div class="table-responsive">
+							<!-- /.box-header -->
+            <div class="box-body">
+11111
+            </div>
+            <!-- /.box-body -->
+					</div> 
+	      		</div>
+            <!-- table end 2 -->		
+				<div class="chart tab-pane" id="sales-chart" style="">
+			<!-- /.box-header -->
+					<div class="box-body">
+						<div class="table-responsive">
+						234
+						</div>
+					 <!-- /.box-body -->
+					</div>
+</div>
+<!-- -->
                   <!-- /.users-list -->
                 </div>
                 <!-- /.box-body -->
