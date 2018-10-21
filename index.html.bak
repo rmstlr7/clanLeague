@@ -84,6 +84,30 @@ var awayTeam = 'http://pescl.cf/dist/img/team/'+awayTeamVal+'.png';
 var kakaoUrl = 'http://pescl.cf/';
 
 
+
+if(homeTeamVal == ""){
+	alert('본인클랜을 선택해주세요.');
+$('#homeTeam').focus();
+$('#homeTeam').select2('open');
+	return false;
+}
+
+if(awayTeamVal == ""){
+	alert('상대클랜을 선택해주세요.');
+	return false;
+}
+
+if(datePick == ""){
+	alert('날짜를 입력해주세요.');
+	return false;
+}
+
+if(timePick == ""){
+	alert('시간을 입력해주세요.');
+	return false;
+}
+
+
 				 //   var pesdbUrl = 'http://pesdb.net/pes2019/?id='+playerVal;
 					
 					// // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
@@ -120,7 +144,7 @@ var kakaoUrl = 'http://pescl.cf/';
 					  }],
 					  buttons: [
 						{
-						  title: 'http://pescl.cf 접속하기',
+						  title: 'pescl.cf 접속하기',
 						  link: {
 							mobileWebUrl: kakaoUrl,
 							webUrl: kakaoUrl
@@ -146,13 +170,14 @@ var kakaoUrl = 'http://pescl.cf/';
 		$('#reservationtime').daterangepicker({
 			timePicker: true
 			, timePickerIncrement: 30
-			, format: 'YYYY/MM/DD h:mm A' 
+			, format: 'YYYY-MM-DD h:mm A' 
 		})
 
 		//Date picker
 		$('#datepicker').datepicker({
 		  autoclose: true
 		 // , format: 'YYYY/MM/DD h:mm'
+		 , format: 'yyyy-mm-dd' 
 		})
 
 		//Timepicker
@@ -604,7 +629,7 @@ var kakaoUrl = 'http://pescl.cf/';
 			  	
 				대전신청[카톡] 업데이트 되었습니다. </br>
 				카카오톡으로 메시지를 전송 할 수 있습니다. </br>
-				주요기능 본인클랜 선택, 대전클랜 선택, 날짜, 시간을 지정한 후  </br>
+				주요기능 [본인클랜 선택], [대전클랜 선택], [날짜], [시간]을 지정한 후  </br>
 				카카오톡 이미지버튼을 클릭 시 원하는채팅방으로 메시지를 보낼 수 있는 기능입니다. </br>
 			  </span>
             </div>
@@ -782,6 +807,7 @@ var kakaoUrl = 'http://pescl.cf/';
               <div class="form-group">
                 <label>신청클랜(본인클랜)</label>
                 <select class="form-control select2" style="width: 100%;" id="homeTeam">
+				  <option value="" disabled selected>본인클랜을 선택해주세요.</option>
                   <option value="swc">SWC</option>
 				  <option value="teamA">DD</option>
                   <option value="not">나트</option>
@@ -798,6 +824,7 @@ var kakaoUrl = 'http://pescl.cf/';
               <div class="form-group">
                 <label>상대클랜(상대클랜)</label>
                 <select class="form-control select2" style="width: 100%;" id="awayTeam">
+			      <option value="" disabled selected>상대클랜을 선택해주세요.</option>
                   <option value="swc">SWC</option>
 				  <option value="teamA">DD</option>
                   <option value="not">나트</option>
