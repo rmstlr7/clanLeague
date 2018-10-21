@@ -87,22 +87,25 @@ var kakaoUrl = 'http://pescl.cf/';
 
 if(homeTeamVal == ""){
 	alert('본인클랜을 선택해주세요.');
-$('#homeTeam').select2('open');
+	$('#homeTeam').select2('open');
 	return false;
 }
 
 if(awayTeamVal == ""){
 	alert('상대클랜을 선택해주세요.');
+	$('#awayTeam').select2('open');
 	return false;
 }
 
 if(datePick == ""){
 	alert('날짜를 입력해주세요.');
+	$("#datepicker").focus();
 	return false;
 }
 
 if(timePick == ""){
 	alert('시간을 입력해주세요.');
+	$("#timePick").focus();
 	return false;
 }
 
