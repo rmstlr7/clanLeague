@@ -56,21 +56,10 @@
     <script>
     $( document ).ready(function() {
 
-		
-
 		Kakao.init('d49726de39720bebe7ac2857fa12ab25');
-        console.log( "document loaded" );
+        //console.log( "document loaded" );
 
 			$('#kakao-link-btn').click(function() {
-
-
-        console.log( "dataPick : "
-		, $("#datepicker").val()
-		, "#timepicker : "
-		, $(".timepicker").val());
-
-
-
 
 var datePick = $("#datepicker").val();
 var timePick = $(".timepicker").val();
