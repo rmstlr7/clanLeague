@@ -723,7 +723,7 @@ if(timePick == ""){
             <!-- Tabs within a box -->
             <ul class="nav nav-tabs ui-sortable-handle">
               <li class="active"><a href="#revenue-club" data-toggle="tab" aria-expanded="false">참여클럽</a></li>
-              <li class=""><a href="#sales-chart" data-toggle="tab" aria-expanded="true">대전신청[카톡]</a></li>
+              <li class=""><a href="#sales-club" data-toggle="tab" aria-expanded="true">대전신청[카톡]</a></li>
             </ul>
             <div class="tab-content no-padding">
               	<!-- Morris chart - Sales -->
@@ -799,7 +799,7 @@ if(timePick == ""){
 	      		</div>
             <!-- table end 2 -->
 <!-- 2번 탭 시작 -->
-				<div class="chart tab-pane" id="sales-chart" style="">
+				<div class="chart tab-pane" id="sales-club" style="">
 			<!-- /.box-header -->
 					<div class="box-body">
 						<div class="table-responsive">
@@ -984,8 +984,25 @@ if(timePick == ""){
 				  <td>122</td>
 				  <td>39</td>
 				</tr>
+
 				<tr>
                   <td>2</td>
+                  <td>
+					<img src="dist/img/otaku.gif" class="photo2" alt="Product Image">
+					오타쿠 
+				  </td>
+                  <td>3</td>
+                  <td>9</td>
+                  <td>3</td>
+				  <td>0</td>
+				  <td>0</td>
+				  <td>137</td>
+				  <td>121</td>
+				  <td>16</td>
+				</tr>
+
+				<tr>
+                  <td>3</td>
                   <td>
 					<img src="dist/img/daejeon.gif" class="photo2" alt="Product Image">
 					대전위닝
@@ -999,21 +1016,7 @@ if(timePick == ""){
 				  <td>160</td>
 				  <td>31</td>
 				</tr>
-				<tr>
-                  <td>3</td>
-                  <td>
-					<img src="dist/img/otaku.gif" class="photo2" alt="Product Image">
-					오타쿠 
-				  </td>
-                  <td>2</td>
-                  <td>6</td>
-                  <td>2</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>91</td>
-				  <td>76</td>
-				  <td>15</td>
-				</tr>
+
               	<tr>
                   <td>4</td>
                   <td>
