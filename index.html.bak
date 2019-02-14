@@ -35,12 +35,16 @@
   <link rel="icon" href="dist/img/favicon.ico" type="image/ico" />
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<!-- 19.02.07 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <!-- 10-20 추가 -->
 <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
 <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
 <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
+
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -55,6 +59,13 @@
 
     <script>
     $( document ).ready(function() {
+
+
+$('#execute').click(function(){
+
+
+
+})
 
 		Kakao.init('d49726de39720bebe7ac2857fa12ab25');
         //console.log( "document loaded" );
@@ -72,8 +83,47 @@ var homeTeam = 'http://pescl.cf/dist/img/team/'+homeTeamVal+'.png';
 var awayTeam = 'http://pescl.cf/dist/img/team/'+awayTeamVal+'.png';
 var kakaoUrl = 'http://pescl.cf/';
 
+alert(1);
+
+/*
+$.ajax({
+		url:'https://script.google.com/macros/s/AKfycbz7OCbPFpy6xSiNMFEdY-eB-3O-q1MoPe0-8fwGG8EysveX9lEI/exec',
+		type: "post",
+		data: {A:"a", B:"b"},
+		success:function(data){
+			console.log(data);
+			
+			//$('#time').append(data);
+		}
+	})
+*/
+
+$.ajax({
+  url: "웹앱URL",
+  data: {A:"a", B:"f"},
+  type: "POST"
+});
 
 
+
+/*
+var spreadsheetKey = '1-g6BZiP7ugWNIGjgu7yeP1Aq-xAZ_RTlO4GElUcpoBY'
+$.ajax({ 
+    type: 'GET', 
+    url: 'http://spreadsheets.google.com/feeds/cells/' + spreadsheetKey + '/od6/public/full?alt=json', 
+    success: function(data){ 
+    alert("success"); 
+    } 
+}); 
+
+$.ajax({ 
+url: "https://script.google.com/macros/s/AKfycbz7OCbPFpy6xSiNMFEdY-eB-3O-q1MoPe0-8fwGG8EysveX9lEI/exec", 
+success:function(result) { 
+console.log(result); 
+} 
+}); 
+*/
+alert(2);
 if(homeTeamVal == ""){
 	alert('본인클랜을 선택해주세요.');
 	$('#homeTeam').select2('open');
@@ -1051,23 +1101,40 @@ if(timePick == ""){
 				  <td>62</td>
 				  <td>41</td>
 				</tr>
-              	<tr>
+
+				<tr>
                   <td>7</td>
+                  <td>
+					<img src="dist/img/not.gif" class="photo2" alt="Product Image">
+					나트 
+				  </td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>1</td>
+				  <td>0</td>
+				  <td>0</td>
+				  <td>46</td>
+				  <td>30</td>
+				  <td>16</td>
+				</tr>
+
+              	<tr>
+                  <td>8</td>
                   <td>
 					<img src="dist/img/friends.gif" class="photo2" alt="Product Image">
 					위친 
 				  </td>
-                  <td>6</td>
+                  <td>7</td>
                   <td>3</td>
                   <td>1</td>
 				  <td>0</td>
-				  <td>5</td>
-				  <td>216</td>
-				  <td>263</td>
-				  <td>-47</td>
+				  <td>6</td>
+				  <td>246</td>
+				  <td>309</td>
+				  <td>-63</td>
 				</tr>
        			<tr>
-                  <td>8</td>
+                  <td>9</td>
                   <td>
 					<img src="dist/img/lowe.gif" class="photo2" alt="Product Image">
 					로위 
@@ -1082,7 +1149,7 @@ if(timePick == ""){
 				  <td>-21</td>
 				</tr>
 				<tr>
-                  <td>9</td>
+                  <td>10</td>
                   <td>
 					<img src="dist/img/teamA.gif" class="photo2" alt="Product Image">
 					DD 
@@ -1096,23 +1163,9 @@ if(timePick == ""){
 				  <td>100</td>
 				  <td>-42</td>
 				</tr>
+
 				<tr>
-                  <td>10</td>
-                  <td>
-					<img src="dist/img/not.gif" class="photo2" alt="Product Image">
-					나트 
-				  </td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				</tr>
-				<tr>
-                  <td>10</td>
+                  <td>11</td>
                   <td>
 					<img src="dist/img/teamB.gif" class="photo2" alt="Product Image">
 					킬러 
