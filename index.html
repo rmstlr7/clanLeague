@@ -44,7 +44,7 @@
 <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -61,11 +61,19 @@
     $( document ).ready(function() {
 
 
-$('#execute').click(function(){
+/*
+	// use your spreadsheet id here
+	var SPREADSHEET_ID = '1QM54MW6ln97i1deyeVP-nGjNFO8Gy-FXErTPuzAHN1Y'
+	$.googleSheetToJSON(SPREADSHEET_ID)
+		.done(function(rows){
+			// each row is a row of data from the spreadsheet
+			console.log(rows);
+		})
+		.fail(function(err){
+			console.log('error!', err);
+		});
+*/
 
-
-
-})
 
 		Kakao.init('d49726de39720bebe7ac2857fa12ab25');
         //console.log( "document loaded" );
@@ -83,47 +91,6 @@ var homeTeam = 'http://pescl.cf/dist/img/team/'+homeTeamVal+'.png';
 var awayTeam = 'http://pescl.cf/dist/img/team/'+awayTeamVal+'.png';
 var kakaoUrl = 'http://pescl.cf/';
 
-alert(1);
-
-/*
-$.ajax({
-		url:'https://script.google.com/macros/s/AKfycbz7OCbPFpy6xSiNMFEdY-eB-3O-q1MoPe0-8fwGG8EysveX9lEI/exec',
-		type: "post",
-		data: {A:"a", B:"b"},
-		success:function(data){
-			console.log(data);
-			
-			//$('#time').append(data);
-		}
-	})
-*/
-
-$.ajax({
-  url: "웹앱URL",
-  data: {A:"a", B:"f"},
-  type: "POST"
-});
-
-
-
-/*
-var spreadsheetKey = '1-g6BZiP7ugWNIGjgu7yeP1Aq-xAZ_RTlO4GElUcpoBY'
-$.ajax({ 
-    type: 'GET', 
-    url: 'http://spreadsheets.google.com/feeds/cells/' + spreadsheetKey + '/od6/public/full?alt=json', 
-    success: function(data){ 
-    alert("success"); 
-    } 
-}); 
-
-$.ajax({ 
-url: "https://script.google.com/macros/s/AKfycbz7OCbPFpy6xSiNMFEdY-eB-3O-q1MoPe0-8fwGG8EysveX9lEI/exec", 
-success:function(result) { 
-console.log(result); 
-} 
-}); 
-*/
-alert(2);
 if(homeTeamVal == ""){
 	alert('본인클랜을 선택해주세요.');
 	$('#homeTeam').select2('open');
@@ -993,193 +960,14 @@ if(timePick == ""){
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
-                <tr>
-                  <th>순위</th>
-                  <th>클랜</th>
-                  <th>경기수</th>
-                  <th>승점</th>
-                  <th>승리</th>
-				  <th>무승부</th>
-				  <th>패배</th>
-				  <th>득점</th>
-				  <th>실점</th>
-				  <th>득실차</th>
-                </tr>
+                   <tr>
+                      <th>선수명</th>
+                      <th>포지션</th>
+					  <th>오버롤</th>
+					  <th>구단주</th>
+					  <th>팀</th>
+                   </tr>
                 </thead>
-                <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-					<img src="dist/img/swc.gif" class="photo2" alt="Product Image">
-					SWC
-				  </td>
-                  <td>4</td>
-                  <td>12</td>
-                  <td>4</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>161</td>
-				  <td>122</td>
-				  <td>39</td>
-				</tr>
-
-				<tr>
-                  <td>2</td>
-                  <td>
-					<img src="dist/img/otaku.gif" class="photo2" alt="Product Image">
-					오타쿠 
-				  </td>
-                  <td>3</td>
-                  <td>9</td>
-                  <td>3</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>137</td>
-				  <td>121</td>
-				  <td>16</td>
-				</tr>
-
-				<tr>
-                  <td>3</td>
-                  <td>
-					<img src="dist/img/daejeon.gif" class="photo2" alt="Product Image">
-					대전위닝
-				  </td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>2</td>
-				  <td>0</td>
-				  <td>3</td>
-				  <td>191</td>
-				  <td>160</td>
-				  <td>31</td>
-				</tr>
-
-              	<tr>
-                  <td>4</td>
-                  <td>
-					<img src="dist/img/old.gif" class="photo2" alt="Product Image">
-					노땅파워 
-				  </td>
-                  <td>2</td>
-                  <td>6</td>
-                  <td>2</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>73</td>
-				  <td>61</td>
-				  <td>12</td>
-				</tr>
-
-              	<tr>
-                  <td>5</td>
-                  <td>
-					<img src="dist/img/dragonBall.gif" class="photo2" alt="Product Image">
-					드래곤볼 
-				  </td>
-                  <td>4</td>
-                  <td>6</td>
-                  <td>2</td>
-				  <td>0</td>
-				  <td>2</td>
-				  <td>146</td>
-				  <td>175</td>
-				  <td>-29</td>
-				</tr>
-				<tr>
-                  <td>6</td>
-                  <td>
-					<img src="dist/img/burinng.gif" class="photo2" alt="Product Image">
-					버닝 
-				  </td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>1</td>
-				  <td>0</td>
-				  <td>1</td>
-				  <td>103</td>
-				  <td>62</td>
-				  <td>41</td>
-				</tr>
-
-				<tr>
-                  <td>7</td>
-                  <td>
-					<img src="dist/img/not.gif" class="photo2" alt="Product Image">
-					나트 
-				  </td>
-                  <td>1</td>
-                  <td>3</td>
-                  <td>1</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>46</td>
-				  <td>30</td>
-				  <td>16</td>
-				</tr>
-
-              	<tr>
-                  <td>8</td>
-                  <td>
-					<img src="dist/img/friends.gif" class="photo2" alt="Product Image">
-					위친 
-				  </td>
-                  <td>7</td>
-                  <td>3</td>
-                  <td>1</td>
-				  <td>0</td>
-				  <td>6</td>
-				  <td>246</td>
-				  <td>309</td>
-				  <td>-63</td>
-				</tr>
-       			<tr>
-                  <td>9</td>
-                  <td>
-					<img src="dist/img/lowe.gif" class="photo2" alt="Product Image">
-					로위 
-				  </td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-				  <td>0</td>
-				  <td>2</td>
-				  <td>58</td>
-				  <td>79</td>
-				  <td>-21</td>
-				</tr>
-				<tr>
-                  <td>10</td>
-                  <td>
-					<img src="dist/img/teamA.gif" class="photo2" alt="Product Image">
-					DD 
-				  </td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-				  <td>0</td>
-				  <td>2</td>
-				  <td>58</td>
-				  <td>100</td>
-				  <td>-42</td>
-				</tr>
-
-				<tr>
-                  <td>11</td>
-                  <td>
-					<img src="dist/img/teamB.gif" class="photo2" alt="Product Image">
-					킬러 
-				  </td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				  <td>0</td>
-				</tr>
-                </tfoot>
               </table>
             </div>
             <!-- /.box-body -->
@@ -1800,10 +1588,57 @@ if(timePick == ""){
 <!-- bootstrap time picker -->
 <script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
 
+
+<script src="bower_components/json/jquery-google-sheet-to-json.min.js"></script>
+
 <!-- page script -->
 <script>
   $(function () {
-    $('#example1').DataTable()
+
+	var SPREADSHEET_ID = '1QM54MW6ln97i1deyeVP-nGjNFO8Gy-FXErTPuzAHN1Y'
+	$.googleSheetToJSON(SPREADSHEET_ID)
+		.done(function(rows){
+			// each row is a row of data from the spreadsheet
+			console.log(rows);
+/*
+			$('#example').DataTable( {
+'paging'      : true,
+'lengthChange': false,
+'searching'   : true,
+'ordering'    : true,
+'info'        : true,
+'autoWidth'   : false,
+				"data" : rows,
+				"columns": [
+					{ "data": "a" },
+					{ "data": "b" },
+				]
+			} );
+*/
+
+$('#example1').DataTable({
+  'paging'      : true,
+  'lengthChange': false,
+  'searching'   : true,
+  'ordering'    : true,
+  'info'        : true,
+  'autoWidth'   : false,
+	"data" : rows,
+	"columns": [
+		{ "data": "a" },
+		{ "data": "b" },
+		{ "data": "c" },
+		{ "data": "d" },
+		{ "data": "e" },
+	]
+})
+		})
+		.fail(function(err){
+			console.log('error!', err);
+		});
+
+    
+
     $('#example2').DataTable({
       'paging'      : true,
       'lengthChange': false,
@@ -1812,6 +1647,7 @@ if(timePick == ""){
       'info'        : true,
       'autoWidth'   : false
     })
+
   })
 </script>
 
@@ -1819,3 +1655,6 @@ if(timePick == ""){
 
 </body>
 </html>
+
+
+
