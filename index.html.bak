@@ -1614,7 +1614,7 @@ $('#example1').DataTable({
   'searching'   : true,
   'ordering'    : true,
   'info'        : true,
-  'autoWidth'   : false,
+  'autoWidth'   : true,
 	"data" : rows,
 	"columns": [
 		{ "data": "경기장홈or어웨이를선택해주세요" },
