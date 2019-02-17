@@ -1604,10 +1604,9 @@ if(timePick == ""){
 		];
 
 	worksheets.forEach(function(worksheet){
-		alert(worksheet);
  		$.googleSheetToJSON('1eF3WWi1ucyyhHidipiPkkAz-VJJE6qItxdTO__TkOS0', worksheet)
 			.done(function(rows){
-//console.log(rows);		// rows.feed.entry
+console.log(rows);		// rows.feed.entry
 
 $('#example1').DataTable({
   'paging'      : true,

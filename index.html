@@ -1606,7 +1606,7 @@ if(timePick == ""){
 	worksheets.forEach(function(worksheet){
  		$.googleSheetToJSON('1eF3WWi1ucyyhHidipiPkkAz-VJJE6qItxdTO__TkOS0', worksheet)
 			.done(function(rows){
-//console.log(rows);		// rows.feed.entry
+console.log(rows);		// rows.feed.entry
 
 $('#example1').DataTable({
   'paging'      : true,
@@ -1614,7 +1614,7 @@ $('#example1').DataTable({
   'searching'   : true,
   'ordering'    : true,
   'info'        : true,
-  'autoWidth'   : false,
+  'autoWidth'   : true,
 	"data" : rows,
 	"columns": [
 		{ "data": "경기장홈or어웨이를선택해주세요" },
