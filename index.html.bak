@@ -917,21 +917,18 @@ if(timePick == ""){
 			
 					<div class="table-responsive">
 							<!-- /.box-header -->
-            <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped" class="display" cellspacing="0" width="100%">
-                <thead>
-                   <tr>
-                      <th>홈&어웨이</th>
-					  <th>본인팀</th>
-					  <th>본인팀득점</th>
-					  <th>홈&어웨이</th>
-					  <th>상대팀</th>
-					  <th>상대팀득점</th>
-					  <th>기록시간</th>
-                   </tr>
-                </thead>
-              </table>
-            </div>
+					<div class="box-body">
+						<table id="example1" class="table table-bordered table-striped">
+							<thead>
+								<tr>
+								  <th>포지션</th>
+								  <th>오버롤</th>
+								  <th>선수명</th>
+								  <th>팀명</th>
+								</tr>
+							</thead>
+						  </table>
+					</div>
 
             <!-- /.box-body -->
 					</div> 
@@ -941,14 +938,17 @@ if(timePick == ""){
 			<!-- /.box-header -->
 					<div class="box-body">
 						<div class="table-responsive">
-						  <table id="example2" class="table table-bordered table-striped">
+						  <table id="example2" class="table table-bordered table-striped" class="display" cellspacing="0" width="100%">
 							<thead>
-								<tr>
-								  <th>포지션</th>
-								  <th>오버롤</th>
-								  <th>선수명</th>
-								  <th>팀명</th>
-								</tr>
+							   <tr>
+								  <th>홈&어웨이</th>
+								  <th>본인팀</th>
+								  <th>본인팀득점</th>
+								  <th>홈&어웨이</th>
+								  <th>상대팀</th>
+								  <th>상대팀득점</th>
+								  <th>기록시간</th>
+							   </tr>
 							</thead>
 						  </table>
 						</div>
@@ -1584,7 +1584,7 @@ if(timePick == ""){
 			.done(function(rows){
 //console.log(rows);		// rows.feed.entry
 
-$('#example1').DataTable({
+$('#example2').DataTable({
   'paging'      : true,
   'lengthChange': true,
   'searching'   : true,
@@ -1655,7 +1655,7 @@ $('#example1').DataTable({
 */
 
 
-	$('#example2').DataTable( {
+	$('#example1').DataTable( {
 	  'paging'      : true,
 	  'lengthChange': true,
 	  'searching'   : true,
