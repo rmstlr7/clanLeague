@@ -908,7 +908,7 @@ if(timePick == ""){
             <!-- Tabs within a box -->
             <ul class="nav nav-tabs ui-sortable-handle">
               <li class="active"><a href="#revenue-chart" data-toggle="tab" aria-expanded="false">경기결과</a></li>
-              <li class=""><a href="#sales-chart" data-toggle="tab" aria-expanded="true">퓨쳐스리그</a></li>
+              <li class=""><a href="#sales-chart" data-toggle="tab" aria-expanded="true">선수검색</a></li>
             </ul>
             <div class="tab-content no-padding">
               	<!-- Morris chart - Sales -->
