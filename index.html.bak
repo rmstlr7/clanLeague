@@ -944,12 +944,10 @@ if(timePick == ""){
 						  <table id="example2" class="table table-bordered table-striped">
 							<thead>
 								<tr>
-								  <th>순위</th>
-								  <th>클랜</th>
-								  <th>경기수</th>
-								  <th>승점</th>
-								  <th>승리</th>
-								  <th>무승부</th>
+								  <th>포지션</th>
+								  <th>오버롤</th>
+								  <th>선수명</th>
+								  <th>팀명</th>
 								</tr>
 							</thead>
 						  </table>
@@ -1658,6 +1656,12 @@ $('#example1').DataTable({
 
 
 	$('#example2').DataTable( {
+	  'paging'      : true,
+	  'lengthChange': false,
+	  'searching'   : true,
+	  'ordering'    : true,
+	  'info'        : true,
+	  'autoWidth'   : false,
         "ajax": "data/objects.txt",
         "columns": [
             { "data": "position" },
