@@ -43,7 +43,6 @@
 <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
 <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -958,7 +957,7 @@ if(timePick == ""){
 					<div class="table-responsive">
 							<!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
+              <table id="example1" class="table table-bordered table-striped" class="display" cellspacing="0" width="100%">
                 <thead>
                    <tr>
                       <th>홈&어웨이</th>
@@ -1590,10 +1589,11 @@ if(timePick == ""){
 <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- bootstrap time picker -->
 <script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
-
-
 <script src="bower_components/json/jquery-google-sheet-to-json.min.js"></script>
 
+<link href="https://cdn.datatables.net/plug-ins/1.10.12/features/searchHighlight/dataTables.searchHighlight.css" rel="stylesheet" />
+<script src="https://cdn.datatables.net/plug-ins/1.10.12/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+<script src="https://bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
 <!-- page script -->
 <script>
   $(function () {
@@ -1615,6 +1615,7 @@ $('#example1').DataTable({
   'ordering'    : true,
   'info'        : true,
   'autoWidth'   : true,
+  'searchHighlight': true,
 	"data" : rows,
 	"columns": [
 		{ "data": "경기장홈or어웨이를선택해주세요" },
@@ -1677,6 +1678,7 @@ $('#example1').DataTable({
     })
 
   })
+
 </script>
 
 
