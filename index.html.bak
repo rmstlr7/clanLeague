@@ -961,15 +961,18 @@ if(timePick == ""){
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                    <tr>
-                      <th>선수명</th>
-                      <th>포지션</th>
-					  <th>오버롤</th>
-					  <th>구단주</th>
-					  <th>팀</th>
+                      <th>홈&어웨이</th>
+					  <th>본인팀</th>
+					  <th>본인팀득점</th>
+					  <th>홈&어웨이</th>
+					  <th>상대팀</th>
+					  <th>상대팀득점</th>
+					  <th>기록시간</th>
                    </tr>
                 </thead>
               </table>
             </div>
+
             <!-- /.box-body -->
 					</div> 
 	      		</div>
@@ -1595,26 +1598,50 @@ if(timePick == ""){
 <script>
   $(function () {
 
+
+	var worksheets = [
+		'11' // defaults to first worksheet without id
+		];
+
+	worksheets.forEach(function(worksheet){
+		alert(worksheet);
+ 		$.googleSheetToJSON('1eF3WWi1ucyyhHidipiPkkAz-VJJE6qItxdTO__TkOS0', worksheet)
+			.done(function(rows){
+//console.log(rows);		// rows.feed.entry
+
+$('#example1').DataTable({
+  'paging'      : true,
+  'lengthChange': true,
+  'searching'   : true,
+  'ordering'    : true,
+  'info'        : true,
+  'autoWidth'   : false,
+	"data" : rows,
+	"columns": [
+		{ "data": "경기장홈or어웨이를선택해주세요" },
+		{ "data": "본인의이름을등록해주세요" },
+		{ "data": "본인의득점을선택해주세요꼭숫자만" },
+		{ "data": "경기장홈or어웨이를선택해주세요_" },
+		{ "data": "상대의이름을등록해주세요" },
+		{ "data": "상대의득점을표기해주세요꼭숫자만" },
+		{ "data": "타임스탬프" },
+	]
+})
+
+
+
+ 
+			})
+			.fail(function(err){
+				console.log('error!', err);
+			});
+	});
+/*
 	var SPREADSHEET_ID = '1QM54MW6ln97i1deyeVP-nGjNFO8Gy-FXErTPuzAHN1Y'
 	$.googleSheetToJSON(SPREADSHEET_ID)
 		.done(function(rows){
 			// each row is a row of data from the spreadsheet
 			console.log(rows);
-/*
-			$('#example').DataTable( {
-'paging'      : true,
-'lengthChange': false,
-'searching'   : true,
-'ordering'    : true,
-'info'        : true,
-'autoWidth'   : false,
-				"data" : rows,
-				"columns": [
-					{ "data": "a" },
-					{ "data": "b" },
-				]
-			} );
-*/
 
 $('#example1').DataTable({
   'paging'      : true,
@@ -1632,11 +1659,13 @@ $('#example1').DataTable({
 		{ "data": "e" },
 	]
 })
+
+
 		})
 		.fail(function(err){
 			console.log('error!', err);
 		});
-
+*/
     
 
     $('#example2').DataTable({
