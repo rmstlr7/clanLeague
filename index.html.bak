@@ -1663,12 +1663,14 @@ $('#example1').DataTable({
 	  'info'        : true,
 	  'autoWidth'   : false,
 	  'searchHighlight': true,
+	  'order' : [[ 3, "desc" ]]
         "ajax": "data/objects.txt",
         "columns": [
             { "data": "position" },
             { "data": "overRoll" },
             { "data": "playerName" },
-            { "data": "teamName" }
+            { "data": "teamName" },
+			{ "data": "condition" }
         ]
     } );
 
