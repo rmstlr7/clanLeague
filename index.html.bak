@@ -1664,7 +1664,7 @@ $('#example1').DataTable({
 	  'info'        : true,
 	  'autoWidth'   : false,
 	  'searchHighlight': true,
-	  "order": [[ 0, 'asc' ], [ 1, 'asc' ]],
+	  "order": [[ 1, 'asc' ],
         "ajax": "data/objects.txt",
         "columns": [
             { "data": "position" },
