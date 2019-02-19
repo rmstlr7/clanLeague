@@ -925,6 +925,7 @@ if(timePick == ""){
 								  <th>오버롤</th>
 								  <th>선수명</th>
 								  <th>팀명</th>
+								  <th>컨디션</th>
 								</tr>
 							</thead>
 						  </table>
