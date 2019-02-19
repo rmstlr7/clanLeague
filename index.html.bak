@@ -907,8 +907,8 @@ if(timePick == ""){
 <div class="nav-tabs-custom" style="">
             <!-- Tabs within a box -->
             <ul class="nav nav-tabs ui-sortable-handle">
-              <li class="active"><a href="#revenue-chart" data-toggle="tab" aria-expanded="false">경기결과</a></li>
-              <li class=""><a href="#sales-chart" data-toggle="tab" aria-expanded="true">선수검색</a></li>
+              <li class="active"><a href="#revenue-chart" data-toggle="tab" aria-expanded="false">선수검색</a></li>
+              <li class=""><a href="#sales-chart" data-toggle="tab" aria-expanded="true">경기결과</a></li>
             </ul>
             <div class="tab-content no-padding">
               	<!-- Morris chart - Sales -->
@@ -1582,7 +1582,7 @@ if(timePick == ""){
 	worksheets.forEach(function(worksheet){
  		$.googleSheetToJSON('1eF3WWi1ucyyhHidipiPkkAz-VJJE6qItxdTO__TkOS0', worksheet)
 			.done(function(rows){
-//console.log(rows);		// rows.feed.entry
+console.log(rows);		// rows.feed.entry
 
 $('#example2').DataTable({
   'paging'      : true,
