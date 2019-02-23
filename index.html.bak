@@ -113,19 +113,19 @@ td.Acondi {
 
 td.Bcondi {
 
-	background-color: #A2E942;
+	background-color: #97DC00;
 }
 
 td.Ccondi {
-
+	background-color: #C4BC00;
 }
 
 td.Dcondi {
-	background-color: #ED9C22;
+	background-color: #B36600;
 }
 
 td.Econdi {
-	background-color: #E44A3A;
+	background-color: #B90000;
 }
 
 
@@ -1732,7 +1732,6 @@ $('#example2').DataTable({
 				// 포지션
 
 				if ( data.d == 'A') {
-
                     $('td', row).eq(3).addClass('Acondi');
                 }
                 else if (data.d == 'B')
@@ -1748,6 +1747,11 @@ $('#example2').DataTable({
 				else {
                     $('td', row).eq(3).addClass('Econdi');
                 }
+
+
+				$('td', row).eq(0).html(
+					'<a href="http://pesdb.net/pes2019/?id='+data.g+'" target="_blank"><img src="http://pesdb.net/pes2019/images/players/'+data.g+'.png" />'+data.a+'</a>'
+				);
             },
 
 	"columns": [
