@@ -106,6 +106,28 @@ td.overRollGreen {
 
 
 
+td.Acondi {
+
+	background-color: #00FFC2
+}
+
+td.Bcondi {
+
+	background-color: #97DC00;
+}
+
+td.Ccondi {
+	background-color: #C4BC00;
+}
+
+td.Dcondi {
+	background-color: #B36600;
+}
+
+td.Econdi {
+	background-color: #B90000;
+}
+
 
 
  //-->
@@ -992,12 +1014,12 @@ if(timePick == ""){
 	      		</div>
 
 <!-- table start 2-->
-              	<div class="chart tab-pane active" id="league-chart" style="">
+              	<div class="chart tab-pane" id="league-chart" style="">
 			
 					<div class="table-responsive">
 							<!-- /.box-header -->
 					<div class="box-body">
-						<table id="example2" class="table table-bordered table-striped">
+						<table id="example2" class="table table-bordered table-striped" class="display" cellspacing="0" width="100%">
 							<thead>
 								<tr>
 								  <th>선수명</th>
@@ -1711,17 +1733,20 @@ $('#example2').DataTable({
 
 				if ( data.d == 'A') {
 
-                    $('td', row).eq(3).addClass('posFW');
+                    $('td', row).eq(3).addClass('Acondi');
                 }
                 else if (data.d == 'B')
                 {
-					$('td', row).eq(3).addClass('posMF');
+					$('td', row).eq(3).addClass('Bcondi');
                 }
                 else if (data.d == 'C'){
-                    $('td', row).eq(3).addClass('posDF');
+                    $('td', row).eq(3).addClass('Ccondi');
                 }                
-				else{
-                    $('td', row).eq(3).addClass('posGK');
+				else if (data.d == 'D'){
+                    $('td', row).eq(3).addClass('Dcondi');
+                }
+				else {
+                    $('td', row).eq(3).addClass('Econdi');
                 }
             },
 
