@@ -61,6 +61,61 @@
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+
+<!-- css -->
+
+
+    <style type="text/css">
+ <!--
+
+td.chlrmstlr {
+	color: black;
+	background-color: rgba(239, 30, 30, 0.3);
+}
+
+
+td.posFW {
+	background-color: rgba(239, 30, 30, 0.3);
+}
+
+td.posMF {
+	background-color: rgba(136, 201, 0, 0.3);
+}
+
+td.posDF {
+	background-color: rgba(0, 171, 210, 0.3);
+}
+
+td.posGK {
+	background-color: rgba(254, 185, 7, 0.3);
+}
+
+td.overRollOrange {
+
+	background-color: #feb907;
+}
+
+td.overRollYellow {
+
+	background-color: #ffff00;
+}
+
+td.overRollGreen {
+	background-color: #88c900;
+}
+
+
+
+
+
+ //-->
+ </style> 
+
+<!-- css end -->
+
+
+
+
     <script>
     $( document ).ready(function() {
 
@@ -907,7 +962,8 @@ if(timePick == ""){
 <div class="nav-tabs-custom" style="">
             <!-- Tabs within a box -->
             <ul class="nav nav-tabs ui-sortable-handle">
-              <li class="active"><a href="#revenue-chart" data-toggle="tab" aria-expanded="false">선수검색</a></li>
+              <li class="active"><a href="#revenue-chart" data-toggle="tab" aria-expanded="false">전체검색</a></li>
+			  <li class=""><a href="#league-chart" data-toggle="tab" aria-expanded="true">리그팀</a></li>
               <li class=""><a href="#sales-chart" data-toggle="tab" aria-expanded="true">경기결과</a></li>
             </ul>
             <div class="tab-content no-padding">
@@ -921,8 +977,8 @@ if(timePick == ""){
 						<table id="example1" class="table table-bordered table-striped">
 							<thead>
 								<tr>
-								  <th>포지션</th>
 								  <th>오버롤</th>
+								  <th>포지션</th>
 								  <th>선수명</th>
 								  <th>팀명</th>
 								  <th>컨디션</th>
@@ -934,12 +990,37 @@ if(timePick == ""){
             <!-- /.box-body -->
 					</div> 
 	      		</div>
-            <!-- table end 2 -->		
+
+<!-- table start 2-->
+              	<div class="chart tab-pane active" id="league-chart" style="">
+			
+					<div class="table-responsive">
+							<!-- /.box-header -->
+					<div class="box-body">
+						<table id="example2" class="table table-bordered table-striped">
+							<thead>
+								<tr>
+								  <th>선수명</th>
+								  <th>포지션</th>
+								  <th>오버롤</th>
+								  <th>컨디션</th>
+								  <th>팀  명</th>
+								  <th>구단주</th>
+								</tr>
+							</thead>
+						  </table>
+					</div>
+
+            <!-- /.box-body -->
+					</div> 
+	      		</div>
+
+            <!-- table end 3 -->		
 				<div class="chart tab-pane" id="sales-chart" style="">
 			<!-- /.box-header -->
 					<div class="box-body">
 						<div class="table-responsive">
-						  <table id="example2" class="table table-bordered table-striped" class="display" cellspacing="0" width="100%">
+						  <table id="example3" class="table table-bordered table-striped" class="display" cellspacing="0" width="100%">
 							<thead>
 							   <tr>
 								  <th>홈&어웨이</th>
@@ -1577,6 +1658,101 @@ if(timePick == ""){
 
 
 	var worksheets = [
+		'1' // defaults to first worksheet without id
+		];
+
+	worksheets.forEach(function(worksheet){
+ 		$.googleSheetToJSON('1QM54MW6ln97i1deyeVP-nGjNFO8Gy-FXErTPuzAHN1Y', worksheet)
+			.done(function(rows){
+console.log(rows);		// rows.feed.entry
+
+$('#example2').DataTable({
+  'paging'      : true,
+  'lengthChange': true,
+  'searching'   : true,
+  'ordering'    : true,
+  'info'        : true,
+  'autoWidth'   : true,
+  'searchHighlight': true,
+	"data" : rows,
+
+	"createdRow": function ( row, data, index ) {
+                if ( data.c > '85' ) {
+
+                    $('td', row).eq(2).addClass('overRollOrange');
+                }
+                else if (data.c > '79' )
+                {
+					$('td', row).eq(2).addClass('overRollYellow');
+                }
+                else if (data.c > '75' ){
+                    $('td', row).eq(2).addClass('overRollGreen');
+                }
+
+				// 포지션
+
+				if ( data.b == 'CF'  || data.b == 'LWF' || data.b == 'RWF' || data.b == 'SS') {
+
+                    $('td', row).eq(1).addClass('posFW');
+                }
+                else if (data.b == 'CMF' ||  data.b == 'AMF')
+                {
+					$('td', row).eq(1).addClass('posMF');
+                }
+                else if (data.b == 'CB' || data.b == 'RB' || data.b == 'LB' ){
+                    $('td', row).eq(1).addClass('posDF');
+                }                
+				else{
+                    $('td', row).eq(1).addClass('posGK');
+                }
+
+
+				// 포지션
+
+				if ( data.d == 'A') {
+
+                    $('td', row).eq(3).addClass('posFW');
+                }
+                else if (data.d == 'B')
+                {
+					$('td', row).eq(3).addClass('posMF');
+                }
+                else if (data.d == 'C'){
+                    $('td', row).eq(3).addClass('posDF');
+                }                
+				else{
+                    $('td', row).eq(3).addClass('posGK');
+                }
+            },
+
+	"columns": [
+		{ data : "a",
+		   className: ""
+		},
+		{ data : "b",
+		   className: ""
+		},
+		{ data : "c" 
+
+		},
+		{ "data": "d" },
+		{ "data": "e" },
+		{ "data": "f" },
+	]
+})
+
+
+
+ 
+			})
+			.fail(function(err){
+				console.log('error!', err);
+			});
+	});
+
+
+// 3번 탭
+	var worksheets = [
 		'11' // defaults to first worksheet without id
 		];
 
@@ -1585,7 +1761,7 @@ if(timePick == ""){
 			.done(function(rows){
 console.log(rows);		// rows.feed.entry
 
-$('#example2').DataTable({
+$('#example3').DataTable({
   'paging'      : true,
   'lengthChange': true,
   'searching'   : true,
