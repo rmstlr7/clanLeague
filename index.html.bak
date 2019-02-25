@@ -1750,7 +1750,8 @@ $('#example2').DataTable({
 
 
 				$('td', row).eq(0).html(
-					'<a href="http://pesdb.net/pes2019/?id='+data.g+'" target="_blank"><img src="http://pesdb.net/pes2019/images/players/'+data.g+'.png" />'+data.a+'</a>'
+				//	'<a href="http://pesdb.net/pes2019/?id='+data.g+'" target="_blank"><img src="http://pesdb.net/pes2019/images/players/'+data.g+'.png" height="42" width="42" />'+data.a+'</a>'
+					'<a href="http://pesdb.net/pes2019/?id='+data.g+'" target="_blank">'+data.a+'</a>'
 				);
             },
 
