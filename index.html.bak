@@ -1686,7 +1686,7 @@ if(timePick == ""){
 	worksheets.forEach(function(worksheet){
  		$.googleSheetToJSON('1QM54MW6ln97i1deyeVP-nGjNFO8Gy-FXErTPuzAHN1Y', worksheet)
 			.done(function(rows){
-console.log(rows);		// rows.feed.entry
+//console.log(rows);		// rows.feed.entry
 
 $('#example2').DataTable({
   'paging'      : true,
