@@ -1027,7 +1027,7 @@ if(timePick == ""){
 								  <th>오버롤</th>
 								  <th>팀  명</th>
 								  <th>컨디션</th>
-								  <th>스타일</th>
+								  <th>플레이 스타일</th>
 								</tr>
 							</thead>
 						  </table>
