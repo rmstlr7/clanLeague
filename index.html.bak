@@ -1688,6 +1688,7 @@ if(timePick == ""){
 	  'info'        : true,
 	  'autoWidth'   : false,
 	  'searchHighlight': true,
+	  'contentType': "application/x-www-form-urlencoded; charset=UTF-8"
         "ajax": "data/myTeam.txt",
         "columns": [
 		    { "data": "position" },
