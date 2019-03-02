@@ -1,10 +1,14 @@
 {
 "data" : [
-	{"playerId":"109343","position":"CF","overRoll":"81","playerName":"ANDRE SILVA","teamName":"1","condition":"C","playStyle":"Goal Poacher"},
-	{"playerId":"101097","position":"LWF","overRoll":"82","playerName":"H. CALHANOGLU","teamName":"1","condition":"A","playStyle":"Creative Playmaker"},
-	{"playerId":"60851","position":"LWF","overRoll":"81","playerName":"A. REBIC","teamName":"1","condition":"C","playStyle":"Hole Player"},
-	{"playerId":"112334","position":"LWF","overRoll":"83","playerName":"H. LOZANO","teamName":"1","condition":"B","playStyle":"Prolific Winger"},
-	{"playerId":"40323","position":"CF","overRoll":"88","playerName":"P. AUBAMEYANG","teamName":"1","condition":"C","playStyle":"Goal Poacher"},
-	{"playerId":"42931","position":"CF","overRoll":"79","playerName":"A. MUSA","teamName":"1","condition":"C","playStyle":"Goal Poacher"}
+	{"playerId":"40340","position":"CB","overRoll":"84","playerName":"L. KOSCIELNY","teamName":"5","condition":"C","playStyle":"---"},
+	{"playerId":"61683","position":"CF","overRoll":"81","playerName":"K. VOLLAND","teamName":"2","condition":"B","playStyle":"Goal Poacher"},
+	{"playerId":"60906","position":"CMF","overRoll":"83","playerName":"C. TOLISSO","teamName":"4","condition":"C","playStyle":"Box-to-Box"},
+	{"playerId":"116652","position":"CF","overRoll":"85","playerName":"T. WERNER","teamName":"5","condition":"C","playStyle":"Goal Poacher"},
+	{"playerId":"37336","position":"RMF","overRoll":"81","playerName":"A. CANDREVA","teamName":"3","condition":"C","playStyle":"Hole Player"},
+	{"playerId":"5778","position":"GK","overRoll":"80","playerName":"I. AKINFEEV","teamName":"2","condition":"C","playStyle":"Defensive Goalkeeper"},
+	{"playerId":"45076","position":"CB","overRoll":"79","playerName":"K. ZOUMA","teamName":"3","condition":"C","playStyle":"---"},
+	{"playerId":"108218","position":"DMF","overRoll":"80","playerName":"L. TOUSART","teamName":"6","condition":"C","playStyle":"The Destroyer"},
+	{"playerId":"32844","position":"GK","overRoll":"84","playerName":"R. JARSTEIN","teamName":"6","condition":"C","playStyle":"Offensive Goalkeeper"},
+	{"playerId":"44379","position":"AMF","overRoll":"90","playerName":"K. DE BRUYNE","teamName":"6","condition":"C","playStyle":"Creative Playmaker"}
   ]
 }

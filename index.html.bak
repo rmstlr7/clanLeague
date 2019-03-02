@@ -1796,15 +1796,20 @@ if(timePick == ""){
 
 				var team = '';
 				if(data.teamName == '1'){
-					'리버풀(근식/진형)'
+					team = '리버풀(개코/푸우)'
+				}else if(data.teamName == '2'){
+					team = '나폴리(진수/재완)'
+				}else if(data.teamName == '3'){
+					team = 'AC밀란(지노)'
+				}else if(data.teamName == '4'){
+					team = '칠레(마루치)'
+				}else if(data.teamName == '4'){
+					team = '바르셀로나(마루치)'
 				}else{
-					'ggg'
+					team = 'ggg'
 				}
 
-				$('td', row).eq(5).html(
-
-				//	'<a href="http://pesdb.net/pes2019/?id='+data.g+'" target="_blank">'+data.a+'</a>'
-				);
+				$('td', row).eq(5).html(team);
             },
 
         "columns": [
