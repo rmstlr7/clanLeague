@@ -1733,6 +1733,7 @@ if(timePick == ""){
 	  'info'        : true,
 	  'autoWidth'   : false,
 	  'searchHighlight': true,
+	  "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
 	  'buttons': ['copy', 'excel', 'pdf', 'print'],
 	  'dom' : 'Bfrtip',
         "ajax": "data/myTeam.txt",
@@ -1803,8 +1804,10 @@ if(timePick == ""){
 					team = 'AC밀란(지노)'
 				}else if(data.teamName == '4'){
 					team = '칠레(마루치)'
-				}else if(data.teamName == '4'){
-					team = '바르셀로나(마루치)'
+				}else if(data.teamName == '5'){
+					team = '바르셀로나(민짱/형선)'
+				}else if(data.teamName == '6'){
+					team = 'PSG(마동석/레토)'
 				}else{
 					team = 'ggg'
 				}
