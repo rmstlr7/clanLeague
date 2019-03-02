@@ -1754,15 +1754,15 @@ if(timePick == ""){
 
 				// 포지션
 
-				if ( data.position == 'CF'  || data.b == 'LWF' || data.b == 'RWF' || data.b == 'SS') {
+				if ( data.position == 'CF'  || data.position == 'LWF' || data.position == 'RWF' || data.position == 'SS') {
 
                     $('td', row).eq(0).addClass('posFW');
                 }
-                else if (data.position == 'CMF' ||  data.b == 'AMF')
+                else if (data.position == 'CMF' ||  data.position == 'AMF')
                 {
 					$('td', row).eq(0).addClass('posMF');
                 }
-                else if (data.position == 'CB' || data.b == 'RB' || data.b == 'LB' ){
+                else if (data.position == 'CB' || data.position == 'RB' || data.position == 'LB' ){
                     $('td', row).eq(0).addClass('posDF');
                 }                
 				else{
@@ -1934,6 +1934,7 @@ $('#example3').DataTable({
   'info'        : true,
   'autoWidth'   : true,
   'searchHighlight': true,
+  "language" : lang_kor, //or lang_eng		https://ibrahimovic.tistory.com/20 [Web Standard]
 	"data" : rows,
 	"columns": [
 		{ "data": "경기장홈or어웨이를선택해주세요" },
