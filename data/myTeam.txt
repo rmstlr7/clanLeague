@@ -5,6 +5,6 @@
 	{"playerId":"60851","position":"LWF","overRoll":"81","playerName":"A. REBIC","teamName":"1","condition":"C","playStyle":"Hole Player"},
 	{"playerId":"112334","position":"LWF","overRoll":"83","playerName":"H. LOZANO","teamName":"1","condition":"B","playStyle":"Prolific Winger"},
 	{"playerId":"40323","position":"CF","overRoll":"88","playerName":"P. AUBAMEYANG","teamName":"1","condition":"C","playStyle":"Goal Poacher"},
-	{"playerId":"42931","position":"CF","overRoll":"79","playerName":"A. MUSA","teamName":"1","condition":"C","playStyle":"Goal Poacher"}
+	{"playerId":"42931","position":"CF","overRoll":"79","playerName":"A. MUSA","teamName":"2","condition":"C","playStyle":"Goal Poacher"}
   ]
 }

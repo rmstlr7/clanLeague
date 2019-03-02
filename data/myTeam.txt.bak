@@ -1,10 +1,10 @@
 {
 "data" : [
-	{"playerId":"109343","position":"CF","overRoll":"81","playerName":"ANDRE SILVA","teamName":"리버풀","condition":"C","playStyle":"Goal Poacher"},
-	{"playerId":"101097","position":"LWF","overRoll":"82","playerName":"H. CALHANOGLU","teamName":"리버풀","condition":"A","playStyle":"Creative Playmaker"},
-	{"playerId":"60851","position":"LWF","overRoll":"81","playerName":"A. REBIC","teamName":"리버풀","condition":"C","playStyle":"Hole Player"},
-	{"playerId":"112334","position":"LWF","overRoll":"83","playerName":"H. LOZANO","teamName":"리버풀","condition":"B","playStyle":"Prolific Winger"},
-	{"playerId":"40323","position":"CF","overRoll":"88","playerName":"P. AUBAMEYANG","teamName":"리버풀","condition":"C","playStyle":"Goal Poacher"},
-	{"playerId":"42931","position":"CF","overRoll":"79","playerName":"A. MUSA","teamName":"리버풀","condition":"C","playStyle":"Goal Poacher"}
+	{"playerId":"109343","position":"CF","overRoll":"81","playerName":"ANDRE SILVA","teamName":"1","condition":"C","playStyle":"Goal Poacher"},
+	{"playerId":"101097","position":"LWF","overRoll":"82","playerName":"H. CALHANOGLU","teamName":"1","condition":"A","playStyle":"Creative Playmaker"},
+	{"playerId":"60851","position":"LWF","overRoll":"81","playerName":"A. REBIC","teamName":"1","condition":"C","playStyle":"Hole Player"},
+	{"playerId":"112334","position":"LWF","overRoll":"83","playerName":"H. LOZANO","teamName":"1","condition":"B","playStyle":"Prolific Winger"},
+	{"playerId":"40323","position":"CF","overRoll":"88","playerName":"P. AUBAMEYANG","teamName":"1","condition":"C","playStyle":"Goal Poacher"},
+	{"playerId":"42931","position":"CF","overRoll":"79","playerName":"A. MUSA","teamName":"1","condition":"C","playStyle":"Goal Poacher"}
   ]
 }

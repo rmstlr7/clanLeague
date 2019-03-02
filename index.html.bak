@@ -1772,20 +1772,20 @@ if(timePick == ""){
 				// 포지션
 
 				if ( data.condition == 'A') {
-                    $('td', row).eq(4).addClass('Acondi');
+                    $('td', row).eq(3).addClass('Acondi');
                 }
                 else if (data.condition == 'B')
                 {
-					$('td', row).eq(4).addClass('Bcondi');
+					$('td', row).eq(3).addClass('Bcondi');
                 }
                 else if (data.condition == 'C'){
-                    $('td', row).eq(4).addClass('Ccondi');
+                    $('td', row).eq(3).addClass('Ccondi');
                 }                
 				else if (data.condition == 'D'){
-                    $('td', row).eq(4).addClass('Dcondi');
+                    $('td', row).eq(3).addClass('Dcondi');
                 }
 				else {
-                    $('td', row).eq(4).addClass('Econdi');
+                    $('td', row).eq(3).addClass('Econdi');
                 }
 
 
