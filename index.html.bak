@@ -1022,12 +1022,12 @@ if(timePick == ""){
 						<table id="example2" class="table table-bordered table-striped" class="display" cellspacing="0" width="100%">
 							<thead>
 								<tr>
-								  <th>선수명</th>
 								  <th>포지션</th>
+								  <th>선수명</th>
 								  <th>오버롤</th>
-								  <th>컨디션</th>
 								  <th>팀  명</th>
-								  <th>구단주</th>
+								  <th>컨디션</th>
+								  <th>스타일</th>
 								</tr>
 							</thead>
 						  </table>
@@ -1690,11 +1690,12 @@ if(timePick == ""){
 	  'searchHighlight': true,
         "ajax": "data/myTeam.txt",
         "columns": [
-		    { "data": "overRoll" },
-            { "data": "position" },
+		    { "data": "position" },
             { "data": "playerName" },
+            { "data": "overRoll" },
             { "data": "teamName" },
-			{ "data": "condition" }
+			{ "data": "condition" },
+			{ "data": "playStyle" }
         ]
     } );
 
