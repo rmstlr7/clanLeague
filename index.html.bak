@@ -1679,6 +1679,27 @@ if(timePick == ""){
 ///
 
 
+
+	$('#example2').DataTable( {
+	  'paging'      : true,
+	  'lengthChange': true,
+	  'searching'   : true,
+	  'ordering'    : true,
+	  'info'        : true,
+	  'autoWidth'   : false,
+	  'searchHighlight': true,
+        "ajax": "data/myTeam.txt",
+        "columns": [
+		    { "data": "overRoll" },
+            { "data": "position" },
+            { "data": "playerName" },
+            { "data": "teamName" },
+			{ "data": "condition" }
+        ]
+    } );
+
+
+/* 2번째 탭 원본
 	var worksheets = [
 		'1' // defaults to first worksheet without id
 		];
@@ -1779,7 +1800,7 @@ $('#example2').DataTable({
 				console.log('error!', err);
 			});
 	});
-
+*/
 
 // 3번 탭
 	var worksheets = [
