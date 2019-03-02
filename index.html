@@ -1794,14 +1794,14 @@ if(timePick == ""){
 				//	'<a href="http://pesdb.net/pes2019/?id='+data.g+'" target="_blank">'+data.a+'</a>'
 				);
 
-				$('td', row).eq(5).html(
-					if(data.teamName == '1'){
-						'리버풀(근식/진형)'
-					}else{
-						'ggg'
-					}
-				//	'<a href="http://pesdb.net/pes2019/?id='+data.g+'" target="_blank">'+data.a+'</a>'
-				);
+				var team = '';
+				if(data.teamName == '1'){
+					team = '리버풀(근식/진형)'
+				}else{
+					team = 'ggg'
+				}
+
+				$('td', row).eq(5).html(team);
             },
 
         "columns": [
