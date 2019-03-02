@@ -1733,7 +1733,7 @@ if(timePick == ""){
 	  'info'        : true,
 	  'autoWidth'   : false,
 	  'searchHighlight': true,
-	  "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+	  "pageLength": 25,
 	  'buttons': ['copy', 'excel', 'pdf', 'print'],
 	  'dom' : 'Bfrtip',
         "ajax": "data/myTeam.txt",
