@@ -1725,6 +1725,7 @@ if(timePick == ""){
 
 
 	$('#example2').DataTable( {
+	  'contentType': "application/json; charset=utf-8",
 	  'paging'      : true,
 	  'lengthChange': true,
 	  'searching'   : true,
