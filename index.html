@@ -1710,41 +1710,41 @@ if(timePick == ""){
 
 				if ( data.position == 'CF'  || data.b == 'LWF' || data.b == 'RWF' || data.b == 'SS') {
 
-                    $('td', row).eq(1).addClass('posFW');
+                    $('td', row).eq(0).addClass('posFW');
                 }
                 else if (data.position == 'CMF' ||  data.b == 'AMF')
                 {
-					$('td', row).eq(1).addClass('posMF');
+					$('td', row).eq(0).addClass('posMF');
                 }
                 else if (data.position == 'CB' || data.b == 'RB' || data.b == 'LB' ){
-                    $('td', row).eq(1).addClass('posDF');
+                    $('td', row).eq(0).addClass('posDF');
                 }                
 				else{
-                    $('td', row).eq(1).addClass('posGK');
+                    $('td', row).eq(0).addClass('posGK');
                 }
 
 
 				// 포지션
 
 				if ( data.condition == 'A') {
-                    $('td', row).eq(3).addClass('Acondi');
+                    $('td', row).eq(4).addClass('Acondi');
                 }
                 else if (data.condition == 'B')
                 {
-					$('td', row).eq(3).addClass('Bcondi');
+					$('td', row).eq(4).addClass('Bcondi');
                 }
                 else if (data.condition == 'C'){
-                    $('td', row).eq(3).addClass('Ccondi');
+                    $('td', row).eq(4).addClass('Ccondi');
                 }                
 				else if (data.condition == 'D'){
-                    $('td', row).eq(3).addClass('Dcondi');
+                    $('td', row).eq(4).addClass('Dcondi');
                 }
 				else {
-                    $('td', row).eq(3).addClass('Econdi');
+                    $('td', row).eq(4).addClass('Econdi');
                 }
 
 
-				$('td', row).eq(0).html(
+				$('td', row).eq(1).html(
 					'<a href="http://pesdb.net/pes2019/?id='+data.playerId+'" target="_blank"><img src="http://pesdb.net/pes2019/images/players/'+data.playerId+'.png" height="42" width="42" />'+data.playerName+'</a>'
 				//	'<a href="http://pesdb.net/pes2019/?id='+data.g+'" target="_blank">'+data.a+'</a>'
 				);
