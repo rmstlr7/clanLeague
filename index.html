@@ -1742,14 +1742,14 @@ if(timePick == ""){
 		"createdRow": function ( row, data, index ) {
                 if ( data.overRoll > '85' ) {
 
-                    $('td', row).eq(2).addClass('overRollOrange');
+                    $('td', row).eq(4).addClass('overRollOrange');
                 }
                 else if (data.overRoll > '79' )
                 {
-					$('td', row).eq(2).addClass('overRollYellow');
+					$('td', row).eq(4).addClass('overRollYellow');
                 }
                 else if (data.overRoll > '75' ){
-                    $('td', row).eq(2).addClass('overRollGreen');
+                    $('td', row).eq(4).addClass('overRollGreen');
                 }
 
 				// 포지션

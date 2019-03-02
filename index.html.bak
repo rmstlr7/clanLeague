@@ -1027,10 +1027,10 @@ if(timePick == ""){
 								<tr>
 								  <th>포지션</th>
 								  <th>선수명</th>
-								  <th>오버롤</th>
-								  <th>컨디션</th>
-								  <th>플레이 스타일</th>
 								  <th>팀  명</th>
+								  <th>컨디션</th>
+								  <th>오버롤</th>
+								  <th>플레이 스타일</th>
 								</tr>
 							</thead>
 						  </table>
@@ -1801,12 +1801,13 @@ if(timePick == ""){
         "columns": [
 		    { "data": "position" },
             { "data": "playerName" },
-            { "data": "overRoll" },
+            { "data": "teamName" },
 			{ "data": "condition" },
-			{ "data": "playStyle" },
-			{ "data": "teamName" }
+			{ "data": "overRoll" },
+			{ "data": "playingStyle" }
         ],
 		"language" : lang_kor //or lang_eng		https://ibrahimovic.tistory.com/20 [Web Standard]
+
 
 
     } );
