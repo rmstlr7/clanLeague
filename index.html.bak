@@ -1806,7 +1806,7 @@ if(timePick == ""){
 			{ "data": "overRoll" },
 			{ "data": "playingStyle" }
         ],
-		"language" : lang_kor //or lang_eng		https://ibrahimovic.tistory.com/20 [Web Standard]
+		"language" : lang_kor //or lang_eng		https://ibrahimovic.tistory.com/20 [Web Standard] 
 
 
 
@@ -2006,6 +2006,7 @@ $('#example1').DataTable({
 	  'info'        : true,
 	  'autoWidth'   : false,
 	  'searchHighlight': true,
+	  "language" : lang_kor, //or lang_eng		https://ibrahimovic.tistory.com/20 [Web Standard]
         "ajax": "data/objects.txt",
         "columns": [
 		    { "data": "overRoll" },
