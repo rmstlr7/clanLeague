@@ -1791,8 +1791,7 @@ if(timePick == ""){
 
 
 				$('td', row).eq(1).html(
-					'<a href="http://pesdb.net/pes2019/?id='+data.playerId+'" target="_blank"><img src="http://pesdb.net/pes2019/images/players/'+data.playerId+'.png" height="42" width="42" />'+data.playerName+'</a>'
-				//	'<a href="http://pesdb.net/pes2019/?id='+data.g+'" target="_blank">'+data.a+'</a>'
+					'<a href="http://pesdb.net/pes2019/?id='+data.playerId+'" target="_blank">'+data.playerName+'</a>'
 				);
 
 
