@@ -1728,6 +1728,9 @@ $('#example2').DataTable({
 	});
 */
 
+
+
+/*
 // 3번 탭
 	var worksheets = [
 		'11' // defaults to first worksheet without id
@@ -1767,6 +1770,14 @@ $('#example3').DataTable({
 				console.log('error!', err);
 			});
 	});
+	*/
+
+
+
+
+
+
+
 /*
 	var SPREADSHEET_ID = '1QM54MW6ln97i1deyeVP-nGjNFO8Gy-FXErTPuzAHN1Y'
 	$.googleSheetToJSON(SPREADSHEET_ID)
