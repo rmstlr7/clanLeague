@@ -1829,6 +1829,7 @@ $('#example1').DataTable({
 	  'info'        : true,
 	  'autoWidth'   : false,
 	  'searchHighlight': true,
+	  "ajax": "data/objects.txt",
 	  "createdRow": function ( row, data, index ) {
                 if ( data.overRoll > '85' ) {
 
