@@ -1548,8 +1548,8 @@ if(timePick == ""){
 	  "pageLength": 25,
 	  'buttons': ['copy', 'excel', 'pdf', 'print'],
 	  'dom' : 'Bfrtip',
-        "ajax": "data/myTeam.txt",
-
+       // "ajax": "data/myTeam.txt"
+"ajax": "data/objects.txt",
 
 		"createdRow": function ( row, data, index ) {
                 if ( data.overRoll > '85' ) {
