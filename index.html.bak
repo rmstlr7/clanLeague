@@ -901,11 +901,12 @@ if(timePick == ""){
 						<table id="example1" class="table table-bordered table-striped">
 							<thead>
 								<tr>
-								  <th>오버롤</th>
 								  <th>포지션</th>
 								  <th>선수명</th>
-								  <th>팀명</th>
+								  <th>팀  명</th>
 								  <th>컨디션</th>
+								  <th>오버롤</th>
+								  <th>플레이 스타일</th>
 								</tr>
 							</thead>
 						  </table>

@@ -901,11 +901,12 @@ if(timePick == ""){
 						<table id="example1" class="table table-bordered table-striped">
 							<thead>
 								<tr>
-								  <th>오버롤</th>
 								  <th>포지션</th>
 								  <th>선수명</th>
-								  <th>팀명</th>
+								  <th>팀  명</th>
 								  <th>컨디션</th>
+								  <th>오버롤</th>
+								  <th>플레이 스타일</th>
 								</tr>
 							</thead>
 						  </table>
@@ -1817,15 +1818,74 @@ $('#example1').DataTable({
 	  'info'        : true,
 	  'autoWidth'   : false,
 	  'searchHighlight': true,
-	  "language" : lang_kor, //or lang_eng		https://ibrahimovic.tistory.com/20 [Web Standard]
-        "ajax": "data/objects.txt",
+	  "createdRow": function ( row, data, index ) {
+                if ( data.overRoll > '85' ) {
+
+                    $('td', row).eq(4).addClass('overRollOrange');
+                }
+                else if (data.overRoll > '79' )
+                {
+					$('td', row).eq(4).addClass('overRollYellow');
+                }
+                else if (data.overRoll > '75' ){
+                    $('td', row).eq(4).addClass('overRollGreen');
+                }
+
+				// 포지션
+
+				if ( data.position == 'CF'  || data.position == 'LWF' || data.position == 'RWF' || data.position == 'SS') {
+
+                    $('td', row).eq(0).addClass('posFW');
+                }
+                else if (data.position == 'CMF' ||  data.position == 'AMF')
+                {
+					$('td', row).eq(0).addClass('posMF');
+                }
+                else if (data.position == 'CB' || data.position == 'RB' || data.position == 'LB' ){
+                    $('td', row).eq(0).addClass('posDF');
+                }                
+				else{
+                    $('td', row).eq(0).addClass('posGK');
+                }
+
+
+				// 포지션
+
+				if ( data.condition == 'A') {
+                    $('td', row).eq(3).addClass('Acondi');
+                }
+                else if (data.condition == 'B')
+                {
+					$('td', row).eq(3).addClass('Bcondi');
+                }
+                else if (data.condition == 'C'){
+                    $('td', row).eq(3).addClass('Ccondi');
+                }                
+				else if (data.condition == 'D'){
+                    $('td', row).eq(3).addClass('Dcondi');
+                }
+				else {
+                    $('td', row).eq(3).addClass('Econdi');
+                }
+
+
+				$('td', row).eq(1).html(
+				//	'<a href="http://pesdb.net/pes2019/?id='+data.playerId+'" target="_blank"><img src="http://pesdb.net/pes2019/images/players/'+data.playerId+'.png" height="42" width="42" />'+data.playerName+'</a>'
+					'<a href="http://pesdb.net/pes2019/?id='+data.playerId+'" target="_blank">'+data.playerName+'</a>'
+				);
+
+
+            },
+
         "columns": [
-		    { "data": "overRoll" },
-            { "data": "position" },
+		    { "data": "position" },
             { "data": "playerName" },
             { "data": "teamName" },
-			{ "data": "condition" }
-        ]
+			{ "data": "condition" },
+			{ "data": "overRoll" },
+			{ "data": "playingStyle" }
+        ],
+		"language" : lang_kor //or lang_eng		https://ibrahimovic.tistory.com/20 [Web Standard] 
     } );
 
   })
