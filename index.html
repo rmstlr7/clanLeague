@@ -1829,8 +1829,10 @@ $('#example1').DataTable({
 	  'info'        : true,
 	  'autoWidth'   : false,
 	  'searchHighlight': true,
-      "ajax": "data/oneLeague.txt",
-	  "createdRow": function ( row, data, index ) {
+        "ajax": "data/oneLeague.txt",
+
+
+		"createdRow": function ( row, data, index ) {
                 if ( data.overRoll > '85' ) {
 
                     $('td', row).eq(4).addClass('overRollOrange');
@@ -1898,6 +1900,9 @@ $('#example1').DataTable({
 			{ "data": "playingStyle" }
         ],
 		"language" : lang_kor //or lang_eng		https://ibrahimovic.tistory.com/20 [Web Standard] 
+
+
+
     } );
 
   })
