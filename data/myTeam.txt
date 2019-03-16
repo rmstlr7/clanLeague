@@ -114,7 +114,9 @@
 {"playerId":"108218","position":"DMF","playerName":"L. TOUSART","teamName":"PSG (마동석)","condition":"C","overRoll":"80","playingStyle":"강한압박"},
 {"playerId":"111800","position":"CB","playerName":"RUBEN DIAS","teamName":"AC밀란 (지노)","condition":"C","overRoll":"80","playingStyle":"강한압박"},
 {"playerId":"114961","position":"DMF","playerName":"W. NDIDI","teamName":"나폴리 (진수/재완)","condition":"B","overRoll":"80","playingStyle":"문지기"},
+{"playerId":"373634","position":"CF","playerName":"N. ARBUTINA","teamName":"AC밀란 (지노)","condition":"C","overRoll":"80","playingStyle":"Goal Poacher"},
 {"playerId":"42660","position":"LB","playerName":"P. VAN AANHOLT","teamName":"바르셀로나 (민짱 / 형선)","condition":"C","overRoll":"79","playingStyle":"이너랩 풀백"},
+{"playerId":"42931","position":"CF","playerName":"A. MUSA","teamName":"리버풀 (진형/근식)","condition":"C","overRoll":"79","playingStyle":"Goal Poacher"},
 {"playerId":"43765","position":"AMF","playerName":"C. SANCHEZ","teamName":"PSG (마동석)","condition":"C","overRoll":"79","playingStyle":"멀티 플레이어"},
 {"playerId":"45076","position":"CB","playerName":"K. ZOUMA","teamName":"AC밀란 (지노)","condition":"D","overRoll":"79","playingStyle":"---"},
 {"playerId":"47830","position":"CB","playerName":"L. MAGALLAN","teamName":"나폴리 (진수/재완)","condition":"C","overRoll":"79","playingStyle":"---"},
@@ -130,7 +132,7 @@
 {"playerId":"15814","position":"LB","playerName":"Y. NAGATOMO","teamName":"바르셀로나 (민짱 / 형선)","condition":"C","overRoll":"77","playingStyle":"공격형 사이드백"},
 {"playerId":"104711","position":"CB","playerName":"K. NUHU","teamName":"AC밀란 (지노)","condition":"C","overRoll":"77","playingStyle":"---"},
 {"playerId":"40125","position":"DMF","playerName":"C. KOUYATE","teamName":"AC밀란 (지노)","condition":"C","overRoll":"76","playingStyle":"문지기"},
-{"playerId":"35126","position":"CF","playerName":"G. HERRERA","teamName":"UD칠레 (마루치)","condition":"D","overRoll":"73","playingStyle":"---"},
+{"playerId":"35126","position":"CF","playerName":"G. HERRERA","teamName":"UD칠레 (마루치)","condition":"D","overRoll":"73","playingStyle":"---"}
   ]
 }
 
