@@ -728,7 +728,7 @@ if(timePick == ""){
               <span class="info-box-text" title="" >			  	
 				대전신청[카톡] 업데이트 되었습니다.</br>
 				카카오톡으로 메시지를 전송 할 수 있습니다. </br>
-				주요기능 [본인클랜 선택], [대전클랜 선택], [날짜], [시간]을 지정한 후</br>
+				주요기능 [본인팀 선택], [상대팀 선택], [날짜], [시간]을 지정한 후</br>
 				카카오톡 이미지버튼을 클릭 시 원하는채팅방으로 메시지를 보낼 수 있는 기능입니다! </br>
 			  </span>
             </div>
@@ -737,65 +737,7 @@ if(timePick == ""){
           <!-- /.info-box -->
         </div>
 </div>
-      <!-- Info boxes -->
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-fw fa-trophy"></i></span>
 
-            <div class="info-box-content">
-              <span class="info-box-text">[PES 2019] X시즌 우승팀 xx</span>
-			  <span class="info-box-number"><i class="fa fa-fw fa-won"></i> 30,000 </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="fa fa-soccer-ball-o"></i></span>
-            <div class="info-box-content">
-              <span class="info-box-text">[PES 2019] X시즌 MVP xx</span>
-			  <span class="info-box-number"><i class="fa fa-fw fa-won"></i> 10,000 원</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-
-        <!-- fix for small devices only -->
-        <div class="clearfix visible-sm-block"></div>
-
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-green"><i class="fa fa-youtube-play"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">[PES 2019] X시즌 베스트 강의 xx</span>
-			  <span class="info-box-number"><i class="fa fa-fw fa-won"></i> 10,000 원</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-yellow"><i class="fa fa-users"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Members</span>
-			  <span class="info-box-number"><i class="fa fa-user-plus"></i> 200 명</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
 
       <div class="row">
         <div class="col-md-12">
@@ -803,7 +745,7 @@ if(timePick == ""){
               <!-- USERS LIST -->
               <div class="box box-danger">
                 <div class="box-header with-border">
-                  <h3 class="box-title">ClanLeague Clubs</h3> &nbsp; <small>참여클랜</small>
+                  <h3 class="box-title">Match Up</h3> &nbsp; <small>대전신청</small>
 
                   <div class="box-tools pull-right">
                     <span class="label label-danger">1 New Clubs</span>
@@ -817,32 +759,7 @@ if(timePick == ""){
                 <div class="box-body no-padding">
 <!-- -->
 <div class="nav-tabs-custom" style="">
-            <!-- Tabs within a box -->
-            <ul class="nav nav-tabs ui-sortable-handle">
-              <li class="active"><a href="#revenue-club" data-toggle="tab" aria-expanded="false">S.W.C 족보</a></li>
-              <li class=""><a href="#sales-club" data-toggle="tab" aria-expanded="true">대전신청[카톡]</a></li>
-            </ul>
-            <div class="tab-content no-padding">
-              	<!-- Morris chart - Sales -->
-				<!-- table start 1-->
-              	<div class="chart tab-pane active" id="revenue-club" style="">
-			
-					<div class="table-responsive">
-							<!-- /.box-header -->
-<!-- 1번 tab --->
-            <div class="box-body" id="orgChartContainer">
-				<div id="orgChart">
-                  <ul class="users-list clearfix" >
-                   
-								
-                  </ul>
-				</div>
-            </div>
-<!-- 1번 탭 종료 -->
-            <!-- /.box-body -->
-					</div> 
-	      		</div>
-            <!-- table end 2 -->
+           
 <!-- 2번 탭 시작 -->
 				<div class="chart tab-pane" id="sales-club" style="">
 			<!-- /.box-header -->
@@ -852,36 +769,18 @@ if(timePick == ""){
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label>신청클랜(본인클랜)</label>
+                <label>신청팀</label>
                 <select class="form-control select2" style="width: 100%;" id="homeTeam">
 				  <option value="" disabled selected>본인클랜을 선택해주세요.</option>
-                  <option value="swc">SWC</option>
-				  <option value="teamA">DD</option>
-                  <option value="not">나트</option>
-				  <option value="old">노땅파워</option>
-				  <option value="daejeon">대전위닝</option>
-                  <option value="dragonBall">드래곤볼</option>
-                  <option value="burinng">버닝</option>
-                  <option value="otaku">오타쿠</option>
-                  <option value="friends">위닝친구</option>
-                  <option value="teamB" >킬러</option>
+                  <option value="swc">리버풀</option>
                 </select>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <label>상대클랜(상대클랜)</label>
+                <label>상대팀</label>
                 <select class="form-control select2" style="width: 100%;" id="awayTeam">
 			      <option value="" disabled selected>상대클랜을 선택해주세요.</option>
-                  <option value="swc">SWC</option>
-				  <option value="teamA">DD</option>
-                  <option value="not">나트</option>
-				  <option value="old">노땅파워</option>
-				  <option value="daejeon">대전위닝</option>
-                  <option value="dragonBall">드래곤볼</option>
-                  <option value="burinng">버닝</option>
-                  <option value="otaku">오타쿠</option>
-                  <option value="friends">위닝친구</option>
-                  <option value="teamB" >킬러</option>
+                  <option value="swc">레알마드리드</option>
                 </select>
               </div>
               <!-- /.form-group -->
