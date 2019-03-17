@@ -211,7 +211,7 @@ if(timePick == ""){
 					  container: '#kakao-link-btn',
 					  objectType: 'list',
 					  //headerTitle: '[ '+data.homeTeamText+' ] '+'님 픽 해주세요.',
-					  headerTitle: '[이번 '+data.pickNumber+'픽 - 팀 '+data.homeTeamText+'님 픽 해주세요.]',
+					  headerTitle: '[이번 '+data.pickNumberText+'픽 - 팀 '+data.homeTeamText+'님 픽 해주세요.]',
 					 // headerTitle: '['+ $("#datepicker").val() + ']' + '[' + $(".timepicker").val() + ']',
 					  headerLink: {
 						mobileWebUrl: kakaoUrl,
