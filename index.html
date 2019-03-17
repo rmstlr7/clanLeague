@@ -206,7 +206,8 @@ if(timePick == ""){
 					Kakao.Link.createDefaultButton({
 					  container: '#kakao-link-btn',
 					  objectType: 'list',
-					  headerTitle: '['+data.teamPickNum+'픽 - '+data.homeTeamText+'님 픽 해주세요.]',
+					  //headerTitle: '[ '+data.homeTeamText+' ] '+'님 픽 해주세요.',
+					  headerTitle: '[이번 '+data.draftNum+'픽 - 팀 '+data.homeTeamText+'님 픽 해주세요.]',
 					 // headerTitle: '['+ $("#datepicker").val() + ']' + '[' + $(".timepicker").val() + ']',
 					  headerLink: {
 						mobileWebUrl: kakaoUrl,
@@ -856,7 +857,7 @@ if(timePick == ""){
               <div class="form-group">
 
 <label>픽순</label>
-                <select class="form-control select2" style="width: 100%;" id="teamPickNum">
+                <select class="form-control select2" style="width: 100%;" id="awayTeam">
 			      <option value="" disabled selected>이번픽 순번을 선택해주세요.</option>
 
 <option value="1">1</option>
