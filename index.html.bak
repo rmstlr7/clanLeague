@@ -175,7 +175,8 @@ var pickNumberText = $('#pickNumber :selected').text();
 var pickNumberVal = $('#pickNumber :selected').val();
 
 
-var homeTeam = 'http://oneleague.cf/dist/img/team/'+homeTeamVal+'.png';
+//var homeTeam = 'http://oneleague.cf/dist/img/team/'+homeTeamVal+'.png';
+var homeTeam = 'http://oneleague.cf/dist/img/team/face.png';
 var awayTeam = 'http://oneleague.cf/dist/img/team/'+awayTeamVal+'.png';
 var kakaoUrl = 'http://oneleague.cf/';
 
@@ -211,7 +212,7 @@ if(timePick == ""){
 					  container: '#kakao-link-btn',
 					  objectType: 'list',
 					  //headerTitle: '[ '+data.homeTeamText+' ] '+'님 픽 해주세요.',
-					  headerTitle: '[이번 '+data.pickNumberText+'픽 - 팀 '+data.homeTeamText+'님 픽 해주세요.]',
+					  headerTitle: '[이번 '+pickNumberText+'픽 - 팀 '+homeTeamText+'님 픽 해주세요.]',
 					 // headerTitle: '['+ $("#datepicker").val() + ']' + '[' + $(".timepicker").val() + ']',
 					  headerLink: {
 						mobileWebUrl: kakaoUrl,
@@ -777,38 +778,38 @@ if(timePick == ""){
                 <label>이번픽</label>
                 <select class="form-control select2" style="width: 100%;" id="homeTeam">
 				  <option value="" disabled selected>이번픽을 선택해주세요.</option>
-<option value="face">레플즈</option>
-<option value="face">솜빠</option>
-<option value="face">심바</option>
-<option value="face">푸우</option>
-<option value="face">영준</option>
-<option value="face">라떼치노</option>
-<option value="face">한신</option>
-<option value="face">태풍</option>
-<option value="face">코드</option>
-<option value="face">초잇</option>
-<option value="face">우유</option>
-<option value="face">수호</option>
-<option value="face">맥주</option>
-<option value="face">라르손</option>
-<option value="face">토레신</option>
-<option value="face">국키샌드</option>
-<option value="face">넘뚜</option>
-<option value="face">찬찬파파</option>
-<option value="face">꿀벌</option>
-<option value="face">호빵</option>
-<option value="face">울트라유치뽕</option>
-<option value="face">로이스갓</option>
-<option value="face">온새미</option>
-<option value="face">몸만테베즈</option>
-<option value="face">홍삼</option>
-<option value="face">이우진</option>
-<option value="face">백상</option>
-<option value="face">히유웅</option>
-<option value="face">노동</option>
-<option value="face">아이유</option>
-<option value="face">치킨</option>
-<option value="face">승경</option>
+<option value="1">레플즈</option>
+<option value="2">솜빠</option>
+<option value="3">심바</option>
+<option value="4">푸우</option>
+<option value="5">영준</option>
+<option value="6">라떼치노</option>
+<option value="7">한신</option>
+<option value="8">태풍</option>
+<option value="9">코드</option>
+<option value="10">초잇</option>
+<option value="11">우유</option>
+<option value="12">수호</option>
+<option value="13">맥주</option>
+<option value="14">라르손</option>
+<option value="15">토레신</option>
+<option value="16">국키샌드</option>
+<option value="17">넘뚜</option>
+<option value="18">찬찬파파</option>
+<option value="19">꿀벌</option>
+<option value="20">호빵</option>
+<option value="21">울트라유치뽕</option>
+<option value="22">로이스갓</option>
+<option value="23">온새미</option>
+<option value="24">몸만테베즈</option>
+<option value="25">홍삼</option>
+<option value="26">이우진</option>
+<option value="27">백상</option>
+<option value="28">히유웅</option>
+<option value="29">노동</option>
+<option value="30">아이유</option>
+<option value="31">치킨</option>
+<option value="32">승경</option>
 
 
                 </select>
@@ -819,38 +820,38 @@ if(timePick == ""){
                 <select class="form-control select2" style="width: 100%;" id="awayTeam">
 			      <option value="" disabled selected>다음픽을 선택해주세요.</option>
 
-<option value="face">레플즈</option>
-<option value="face">솜빠</option>
-<option value="face">심바</option>
-<option value="face">푸우</option>
-<option value="face">영준</option>
-<option value="face">라떼치노</option>
-<option value="face">한신</option>
-<option value="face">태풍</option>
-<option value="face">코드</option>
-<option value="face">초잇</option>
-<option value="face">우유</option>
-<option value="face">수호</option>
-<option value="face">맥주</option>
-<option value="face">라르손</option>
-<option value="face">토레신</option>
-<option value="face">국키샌드</option>
-<option value="face">넘뚜</option>
-<option value="face">찬찬파파</option>
-<option value="face">꿀벌</option>
-<option value="face">호빵</option>
-<option value="face">울트라유치뽕</option>
-<option value="face">로이스갓</option>
-<option value="face">온새미</option>
-<option value="face">몸만테베즈</option>
-<option value="face">홍삼</option>
-<option value="face">이우진</option>
-<option value="face">백상</option>
-<option value="face">히유웅</option>
-<option value="face">노동</option>
-<option value="face">아이유</option>
-<option value="face">치킨</option>
-<option value="face">승경</option>
+<option value="1">레플즈</option>
+<option value="2">솜빠</option>
+<option value="3">심바</option>
+<option value="4">푸우</option>
+<option value="5">영준</option>
+<option value="6">라떼치노</option>
+<option value="7">한신</option>
+<option value="8">태풍</option>
+<option value="9">코드</option>
+<option value="10">초잇</option>
+<option value="11">우유</option>
+<option value="12">수호</option>
+<option value="13">맥주</option>
+<option value="14">라르손</option>
+<option value="15">토레신</option>
+<option value="16">국키샌드</option>
+<option value="17">넘뚜</option>
+<option value="18">찬찬파파</option>
+<option value="19">꿀벌</option>
+<option value="20">호빵</option>
+<option value="21">울트라유치뽕</option>
+<option value="22">로이스갓</option>
+<option value="23">온새미</option>
+<option value="24">몸만테베즈</option>
+<option value="25">홍삼</option>
+<option value="26">이우진</option>
+<option value="27">백상</option>
+<option value="28">히유웅</option>
+<option value="29">노동</option>
+<option value="30">아이유</option>
+<option value="31">치킨</option>
+<option value="32">승경</option>
 
                 </select>
               </div>
@@ -860,44 +861,6 @@ if(timePick == ""){
             <div class="col-md-6">
               <div class="form-group">
 
-<label>픽순</label>
-                <select class="form-control select2" style="width: 100%;" id="pickNumber">
-			      <option value="" disabled selected>이번픽 순번을 선택해주세요.</option>
-
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-<option value="11">11</option>
-<option value="12">12</option>
-<option value="13">13</option>
-<option value="14">14</option>
-<option value="15">15</option>
-<option value="16">16</option>
-<option value="17">17</option>
-<option value="18">18</option>
-<option value="19">19</option>
-<option value="20">20</option>
-<option value="21">21</option>
-<option value="22">22</option>
-<option value="23">23</option>
-<option value="24">24</option>
-<option value="25">25</option>
-<option value="26">26</option>
-<option value="27">27</option>
-<option value="28">28</option>
-<option value="29">29</option>
-<option value="30">30</option>
-<option value="31">31</option>
-<option value="32">32</option>
-
-                </select>
 <!--
                 <label>대전요청 날짜</label>
 
