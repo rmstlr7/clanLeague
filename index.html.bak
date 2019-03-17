@@ -174,6 +174,8 @@ var awayTeamVal = $('#awayTeam :selected').val();
 var pickNumberText = $('#pickNumber :selected').text();
 var pickNumberVal = $('#pickNumber :selected').val();
 
+var playerClass = $('#playerClass :selected').text();
+
 
 //var homeTeam = 'http://oneleague.cf/dist/img/team/'+homeTeamVal+'.png';
 var homeTeam = 'http://oneleague.cf/dist/img/team/face.png';
@@ -212,7 +214,7 @@ if(timePick == ""){
 					  container: '#kakao-link-btn',
 					  objectType: 'list',
 					  //headerTitle: '[ '+data.homeTeamText+' ] '+'님 픽 해주세요.',
-					  headerTitle: '[이번 '+pickNumberText+'픽 - 팀 '+homeTeamText+'님 픽 해주세요.]',
+					  headerTitle: playerClass+'급'+'['+homeTeamVal+'픽 -  '+homeTeamText+'님 픽 차례]',
 					 // headerTitle: '['+ $("#datepicker").val() + ']' + '[' + $(".timepicker").val() + ']',
 					  headerLink: {
 						mobileWebUrl: kakaoUrl,
@@ -852,6 +854,17 @@ if(timePick == ""){
 <option value="30">아이유</option>
 <option value="31">치킨</option>
 <option value="32">승경</option>
+
+                </select>
+              </div>
+
+
+                <label>다음픽</label>
+                <select class="form-control select2" style="width: 100%;" id="playerClass">
+			      <option value="" disabled selected>선수등급을 선택해주세요.</option>
+
+<option value="B">B급</option>
+<option value="C">C급</option>
 
                 </select>
               </div>
