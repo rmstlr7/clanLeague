@@ -769,7 +769,7 @@ if(timePick == ""){
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label>신청팀</label>
+                <label>이번픽</label>
                 <select class="form-control select2" style="width: 100%;" id="homeTeam">
 				  <option value="" disabled selected>이번픽을 선택해주세요.</option>
 <option value="swc">레플즈</option>
@@ -810,7 +810,7 @@ if(timePick == ""){
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <label>상대팀</label>
+                <label>다음픽</label>
                 <select class="form-control select2" style="width: 100%;" id="awayTeam">
 			      <option value="" disabled selected>다음픽을 선택해주세요.</option>
 
