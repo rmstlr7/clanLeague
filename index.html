@@ -206,8 +206,8 @@ if(timePick == ""){
 					Kakao.Link.createDefaultButton({
 					  container: '#kakao-link-btn',
 					  objectType: 'list',
-					  //headerTitle: '[총 '+data.draftNum+'픽 - 팀 '+data.pickCycleNum+'번 선수]',
-					  headerTitle: '['+ $("#datepicker").val() + ']' + '[' + $(".timepicker").val() + ']',
+					  headerTitle: '['+data.teamPickNum+'픽 - '+data.homeTeamText+'님 픽 해주세요.]',
+					 // headerTitle: '['+ $("#datepicker").val() + ']' + '[' + $(".timepicker").val() + ']',
 					  headerLink: {
 						mobileWebUrl: kakaoUrl,
 						webUrl: kakaoUrl
@@ -854,6 +854,46 @@ if(timePick == ""){
             <!-- /.col -->
             <div class="col-md-6">
               <div class="form-group">
+
+<label>픽순</label>
+                <select class="form-control select2" style="width: 100%;" id="teamPickNum">
+			      <option value="" disabled selected>이번픽 순번을 선택해주세요.</option>
+
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+
+                </select>
+<!--
                 <label>대전요청 날짜</label>
 
                 <div class="input-group date">
@@ -862,10 +902,12 @@ if(timePick == ""){
                   </div>
                   <input type="text" class="form-control pull-right" id="datepicker">
                 </div>
+-->
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-              <!-- time Picker -->
+<!-- time Picker
+
 				  <div class="bootstrap-timepicker">
 					<div class="form-group">
 					  <label>대전요청 시간</label>
@@ -876,10 +918,10 @@ if(timePick == ""){
 						</div>
 					    <input type="text" class="form-control timepicker">
 					  </div>
-					  <!-- /.input group -->
+					  <!-- /.input group 
 					</div>
-					<!-- /.form group -->
 				  </div>
+-->
               </div>
               <!-- /.form-group -->
 
